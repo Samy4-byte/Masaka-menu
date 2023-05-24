@@ -5,6 +5,7 @@ import { BuisneslunchPage } from './Pages/Buisness-lunch/lunch';
 import { SaladPage } from './Pages/Salads/salad';
 import { TofuPage } from './Pages/Tofu/tofu';
 import { SoupPage } from './Pages/Soup/soup';
+import { SoupDetail } from './Pages/SoupDetails/SoupDetails';
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         <Route path='/Buisness-lunch' element={<BuisneslunchPage />} />
         <Route path='/Salads' element={<SaladPage />} />
         <Route path='/Soup' element={<SoupPage />} />
+        <Route path='/Soup/:id' element={<SoupDetail />} />
         <Route path='/Tofu' element={<TofuPage />} />
         <Route />
         <Route />
