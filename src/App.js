@@ -7,6 +7,7 @@ import { SaladPage } from './Pages/Salads/salad';
 import { TofuPage } from './Pages/Tofu/tofu';
 import { SoupPage } from './Pages/Soup/soup';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { WokPage } from './Pages/Wok/wok';
 import { FishPage } from './Pages/Fish/fish';
 import { BeefPage } from './Pages/Beef/beef';
@@ -24,10 +25,14 @@ import { DrinksPage } from './Pages/Drinks/drink'
 =======
 import { SoupDetail } from './Pages/SoupDetails/SoupDetails';
 >>>>>>> 02593109da67a67109c64bd6d52f67d935d4e725
+=======
+import Home from './Pages/Home/home'
+>>>>>>> Aziz
 
 export const App = () => {
   return (
     <BrowserRouter>
+    <Home />
       <Routes>
 <<<<<<< HEAD
         <Route path='/' element={<Layout />} >
@@ -61,7 +66,7 @@ export const App = () => {
         <Route />
         <Route />
         <Route />
-        <Route />
+        <Route />Ё
         <Route />
         <Route />
         <Route />
