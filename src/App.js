@@ -39,6 +39,8 @@ export const App = () => {
           <Route path='/beef' element={<BeefPage />} />
           <Route path='/fish' element={<FishPage />} />
           <Route path='/noodles' element={< NoodlesPage />} />
+          <Route path='/fish' element={ <FishPage/> }/>
+          <Route path='/noodles' element={< NoodlesPage />}/>
           <Route path='/wok' element={<WokPage />} />
           <Route path='/susi' element={<SusiPage />} />
           <Route path='/rolls' element={<RollsPage />} />
