@@ -6,8 +6,6 @@ import { BuisneslunchPage } from './Pages/Buisness-lunch/lunch';
 import { SaladPage } from './Pages/Salads/salad';
 import { TofuPage } from './Pages/Tofu/tofu';
 import { SoupPage } from './Pages/Soup/soup';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { WokPage } from './Pages/Wok/wok';
 import { FishPage } from './Pages/Fish/fish';
 import { BeefPage } from './Pages/Beef/beef';
@@ -22,19 +20,14 @@ import { SetsPage } from './Pages/Sets/set';
 import { KidsMenuPage } from './Pages/Kid_menu/kid_menu';
 import { DesertPage } from './Pages/Deserts/desert';
 import { DrinksPage } from './Pages/Drinks/drink'
-=======
 import { SoupDetail } from './Pages/SoupDetails/SoupDetails';
->>>>>>> 02593109da67a67109c64bd6d52f67d935d4e725
-=======
 import Home from './Pages/Home/home'
->>>>>>> Aziz
 
 export const App = () => {
   return (
     <BrowserRouter>
-    <Home />
+      <Home />
       <Routes>
-<<<<<<< HEAD
         <Route path='/' element={<Layout />} >
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
           <Route path='/bowls' element={<BowlPage />} />
@@ -44,8 +37,8 @@ export const App = () => {
           <Route path='/snacks' element={<SnacksPage />} />
           <Route path='/chicken' element={<ChickenPage />} />
           <Route path='/beef' element={<BeefPage />} />
-          <Route path='/fish' element={ FishPage }/>
-          <Route path='/noodles' element={< NoodlesPage />}/>
+          <Route path='/fish' element={FishPage} />
+          <Route path='/noodles' element={< NoodlesPage />} />
           <Route path='/wok' element={<WokPage />} />
           <Route path='/susi' element={<SusiPage />} />
           <Route path='/rolls' element={<RollsPage />} />
@@ -55,25 +48,7 @@ export const App = () => {
           <Route path='/kids-menu' element={<KidsMenuPage />} />
           <Route path='/deserts' element={<DesertPage />} />
           <Route path='/drinks' element={<DrinksPage />} />
-          </Route>
-=======
-        <Route path='/Bowl' element={<BowlPage/>}/>
-        <Route path='/Buisness-lunch' element={<BuisneslunchPage />} />
-        <Route path='/Salads' element={<SaladPage />} />
-        <Route path='/Soup' element={<SoupPage />} />
-        <Route path='/Soup/:id' element={<SoupDetail />} />
-        <Route path='/Tofu' element={<TofuPage />} />
-        <Route />
-        <Route />
-        <Route />
-        <Route />Ё
-        <Route />
-        <Route />
-        <Route />
-        <Route />
-        <Route />
-        <Route />
->>>>>>> 02593109da67a67109c64bd6d52f67d935d4e725
+        </Route>
       </Routes>
     </BrowserRouter>
   )
