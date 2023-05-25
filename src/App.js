@@ -6,6 +6,7 @@ import { BuisneslunchPage } from './Pages/Buisness-lunch/lunch';
 import { SaladPage } from './Pages/Salads/salad';
 import { TofuPage } from './Pages/Tofu/tofu';
 import { SoupPage } from './Pages/Soup/soup';
+<<<<<<< HEAD
 import { WokPage } from './Pages/Wok/wok';
 import { FishPage } from './Pages/Fish/fish';
 import { BeefPage } from './Pages/Beef/beef';
@@ -21,9 +22,11 @@ import { KidsMenuPage } from './Pages/Kid_menu/kid_menu';
 import { DesertPage } from './Pages/Deserts/desert';
 import { DrinksPage } from './Pages/Drinks/drink'
 
+
 export const App = () => {
   return (
     <BrowserRouter>
+    <Home />
       <Routes>
         <Route path='/' element={<Layout />} >
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
@@ -46,6 +49,7 @@ export const App = () => {
           <Route path='/deserts' element={<DesertPage />} />
           <Route path='/drinks' element={<DrinksPage />} />
           </Route>
+
       </Routes>
     </BrowserRouter>
   )
