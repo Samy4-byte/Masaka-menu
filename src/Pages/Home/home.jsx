@@ -4,6 +4,7 @@ import Column from "../../components/images/JPG/masaka-column.jpg"
 import Nav from "../../components/nav/index"
 import Layout from "../../components/layout/index"
 
+
 const Home = () => {
     return(
         <div className={H.container}>
