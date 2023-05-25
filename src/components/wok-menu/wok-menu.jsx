@@ -3,7 +3,7 @@ import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 
 const WokMenu = () => {
-    const soups = [
+    const woks = [
         {
             id: 1,
             name: "Овощной крем-суп",
