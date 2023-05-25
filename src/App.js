@@ -6,7 +6,6 @@ import { BuisneslunchPage } from './Pages/Buisness-lunch/lunch';
 import { SaladPage } from './Pages/Salads/salad';
 import { TofuPage } from './Pages/Tofu/tofu';
 import { SoupPage } from './Pages/Soup/soup';
-<<<<<<< HEAD
 import { WokPage } from './Pages/Wok/wok';
 import { FishPage } from './Pages/Fish/fish';
 import { BeefPage } from './Pages/Beef/beef';
@@ -26,7 +25,7 @@ import { DrinksPage } from './Pages/Drinks/drink'
 export const App = () => {
   return (
     <BrowserRouter>
-    <Home />
+      <Home />
       <Routes>
         <Route path='/' element={<Layout />} >
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
@@ -37,8 +36,8 @@ export const App = () => {
           <Route path='/snacks' element={<SnacksPage />} />
           <Route path='/chicken' element={<ChickenPage />} />
           <Route path='/beef' element={<BeefPage />} />
-          <Route path='/fish' element={ FishPage }/>
-          <Route path='/noodles' element={< NoodlesPage />}/>
+          <Route path='/fish' element={<FishPage />} />
+          <Route path='/noodles' element={< NoodlesPage />} />
           <Route path='/wok' element={<WokPage />} />
           <Route path='/susi' element={<SusiPage />} />
           <Route path='/rolls' element={<RollsPage />} />
@@ -48,8 +47,7 @@ export const App = () => {
           <Route path='/kids-menu' element={<KidsMenuPage />} />
           <Route path='/deserts' element={<DesertPage />} />
           <Route path='/drinks' element={<DrinksPage />} />
-          </Route>
-
+        </Route>
       </Routes>
     </BrowserRouter>
   )
