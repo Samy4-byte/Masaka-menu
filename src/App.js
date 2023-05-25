@@ -48,7 +48,7 @@ export const App = () => {
           <Route path='/kids-menu' element={<KidsMenuPage />} />
           <Route path='/deserts' element={<DesertPage />} />
           <Route path='/drinks' element={<DrinksPage />} />
-          </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   )
