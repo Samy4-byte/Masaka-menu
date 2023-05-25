@@ -4,6 +4,11 @@
     height: 44.9em;
 }
 
+.column {
+    width: 100%;
+    height: 100%;
+}
+
 .line {
     width: 100%;
     height: 95px;
@@ -16,8 +21,5 @@
     height: 100%;
 }
 
-.column {
-    width: 100%;
-    height: 100%;
-}
+
 
