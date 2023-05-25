@@ -3,7 +3,7 @@ import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 
 const WokMenu = () => {
-    const woks = [
+    const soups = [
         {
             id: 1,
             name: "Овощной крем-суп",
@@ -197,12 +197,54 @@ const WokMenu = () => {
         }
     ];
 
-  return (
-    <div className="item-menu">
-      <h1>ВОКИ</h1>
-      <ItemMenu items={woks} />
-    </div>
-  );
+    const [selectedSoup, setSelectedSoup] = useState(null);
+
+    const openModal = (wok) => {
+        setSelectedSoup(wok);
+    };
+
+    const closeModal = () => {
+        setSelectedSoup(null);
+    };
+
+    const handleOverlayClick = (event) => {
+        if (event.target.classList.contains('modal')) {
+            closeModal();
+        }
+    };
+
+    return (
+        <div className="soup-menu">
+            <h1>Вок</h1>
+            <div className="soup-container">
+                {woks.map((wok) => (
+                    <div className="soup-card" key={wok.id}>
+                        <button className="soup-button" onClick={() => openModal(wok)}>
+                            <img className="soup-photo" src={wok.photo} alt={wok.name} />
+                        </button>
+                        <h2>{wok.name}</h2>
+                        <p>Описание: {wok.description}</p>
+                        <p className="price">Цена: ${wok.price}</p>
+                    </div>
+                ))}
+            </div>
+
+            {selectedSoup && selectedSoup.id && (
+                <div className="modal" onClick={handleOverlayClick}>
+                    <div className="modal-content">
+                        <span className="close-button" onClick={closeModal}>
+                            &times;
+                        </span>
+                        <h2>{selectedSoup.name}</h2>
+                        <img src={selectedSoup.photo} alt={selectedSoup.name} />
+                        <p>Описание: {selectedSoup.description}</p>
+                        <p>Цена: ${selectedSoup.price}</p>
+                        <p>Ингредиенты: {selectedSoup.ingredients.join(', ')}</p>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
 };
 
 export default WokMenu;
