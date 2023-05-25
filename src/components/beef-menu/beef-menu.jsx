@@ -2,8 +2,8 @@ import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 
-const WokMenu = () => {
-    const woks = [
+const BeefMenu = () => {
+    const beefs = [
         {
             id: 1,
             name: "Овощной крем-суп",
@@ -199,13 +199,15 @@ const WokMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>ВОКИ</h1>
-      <ItemMenu items={woks} />
+      <h1>БЛЮДА С ГОВЯДИНОЙ</h1>
+      <ItemMenu items={beefs} />
     </div>
   );
 };
 
-export default WokMenu;
+export default BeefMenu;
+
+
 
 
 
