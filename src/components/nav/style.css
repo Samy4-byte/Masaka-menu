@@ -1,17 +1,35 @@
-.link {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid red;
-    border-radius: 30px;
-    padding: 5px;
-    background-color: red;
+.slider-container {
+    width: 100%;
+    overflow: hidden;
 }
 
-.link:active {
-    color: black;
-    background-color: #fff;
-    border: none;
+.link-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
 
+
+.link {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: red;
+    color: #eee;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    opacity: 0.9    ;
+}
+
+.link.active {
+    opacity: 1;
+}
+
+.link:hover {
+    background-color: black;
+    color: white;
 }

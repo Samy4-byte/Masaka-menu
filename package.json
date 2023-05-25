@@ -10,11 +10,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "react-slick": "^0.29.0",
-=======
     "use-query-params": "^2.2.1",
->>>>>>> 02593109da67a67109c64bd6d52f67d935d4e725
     "web-vitals": "^2.1.4"
   },
   "scripts": {
