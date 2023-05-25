@@ -26,12 +26,7 @@ export const ItemMenu = (props) => {
               <img className="item-photo" src={item.photo} alt={item.name} />
             </button>
             <h2>{item.name}</h2>
-            {item.ingredients && (
-              <p>{item.ingredients.join(", ")}</p>
-            )}
-            {item.description && (
-              <p>{item.description}</p>
-            )}
+            {/* <p>Описание: {item.description}</p> */}
             <p className="price">Цена: {item.price} сом</p>
           </div>
         ))}
@@ -45,12 +40,8 @@ export const ItemMenu = (props) => {
             </span>
             <h2>{selectedItem.name}</h2>
             <img src={selectedItem.photo} alt={selectedItem.name} />
-            {selectedItem.ingredients && (
-              <p>Состав: {selectedItem.ingredients.join(", ")}</p>
-            )}
-            {selectedItem.description && (
-              <p>Описание: {selectedItem.description}</p>
-            )}
+            {/* <p>Описание: {selectedItem.description}</p> */}
+            <p>Состав: {selectedItem.ingredients.join(", ")}</p>
             <p>Цена: {selectedItem.price} сом</p>
           </div>
         </div>
