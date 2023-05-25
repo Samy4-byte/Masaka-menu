@@ -20,12 +20,13 @@ import { SetsPage } from './Pages/Sets/set';
 import { KidsMenuPage } from './Pages/Kid_menu/kid_menu';
 import { DesertPage } from './Pages/Deserts/desert';
 import { DrinksPage } from './Pages/Drinks/drink'
+import Home from './Pages/Home/home'
 
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <Home />
+        <Home />
       <Routes>
         <Route path='/' element={<Layout />} >
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
@@ -36,8 +37,8 @@ export const App = () => {
           <Route path='/snacks' element={<SnacksPage />} />
           <Route path='/chicken' element={<ChickenPage />} />
           <Route path='/beef' element={<BeefPage />} />
-          <Route path='/fish' element={<FishPage />} />
-          <Route path='/noodles' element={< NoodlesPage />} />
+          <Route path='/fish' element={ <FishPage/> }/>
+          <Route path='/noodles' element={< NoodlesPage />}/>
           <Route path='/wok' element={<WokPage />} />
           <Route path='/susi' element={<SusiPage />} />
           <Route path='/rolls' element={<RollsPage />} />
