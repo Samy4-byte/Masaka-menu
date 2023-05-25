@@ -1,5 +1,11 @@
 .item-menu {
     text-align: center;
+    background-image: url(../images/JPG//light\ oak\ 2.jpeg);
+    border-top: 20px solid black;
+}
+
+.item-menu h1 {
+    margin-top: 50px;
 }
 
 .item-container {
