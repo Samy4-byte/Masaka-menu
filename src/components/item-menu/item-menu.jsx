@@ -33,6 +33,7 @@ export const ItemMenu = (props) => {
               <p>{item.description}</p>
             )}
             <p className="price">Цена: {item.price} сом</p>
+            <b>{item.weight} гр</b>
           </div>
         ))}
       </div>
