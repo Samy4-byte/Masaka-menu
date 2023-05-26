@@ -27,7 +27,7 @@ const links = [
     {
         id: 5,
         text: 'Салаты',
-        route: '/Salads'
+        route: '/salads'
     },
     {
         id: 6,

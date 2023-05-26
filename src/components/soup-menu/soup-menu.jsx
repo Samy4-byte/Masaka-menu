@@ -1,7 +1,18 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
-import Soup1 from "../images/Menu/soup/suop1.png"
+import Soup1 from "../images/Menu/soup/soup1.png"
+import Soup2 from "../images/Menu/soup/soup2.png"
+import Soup3 from "../images/Menu/soup/soup3.png"
+import Soup4 from "../images/Menu/soup/soup4.png"
+import Soup5 from "../images/Menu/soup/soup5.png"
+import Soup6 from "../images/Menu/soup/soup6.png"
+import Soup7 from "../images/Menu/soup/soup7.png"
+import Soup8 from "../images/Menu/soup/soup8.png"
+import Soup9 from "../images/Menu/soup/soup9.png"
+import Soup10 from "../images/Menu/soup/soup10.png"
+import Soup11 from "../images/Menu/soup/soup11.png"
+import Soup12 from "../images/Menu/soup/soup12.png"
 
 const SoupMenu = () => {
     const soups = [
@@ -15,187 +26,100 @@ const SoupMenu = () => {
         },
         {
             id: 2,
-            name: "Грибной крем-суп",
-            ingredients: [
-                "шампиньоны",
-                "лук",
-                "сметана",
-                "перепелиные яйца",
-                "соль",
-                "перец"
-            ],
-            description: "Ароматный грибной крем-суп с нежной текстурой и насыщенным вкусом. Идеальное сочетание свежих шампиньонов и сливок.",
-            photo: "https://smaylovich.ru/upload/iblock/386/38685c29e962feb6ff89498fda495b3b.jpeg",
-            price: 6.99
+            name: "удон танг",
+            description: "японский домашний удон с коричневой курицей, отварным яйцом в зеленом чае и наваристым бульоном по-азиатски",
+            photo: `${Soup2}`,
+            price: 215,
+            weight: 410
         },
         {
             id: 3,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "юкеджан",
+            description: "корейский традиционный суп, на основе говяжьего бульона с овощами",
+            photo: `${Soup3}`,
+            price: 275,
+            weight: 350
         },
         {
             id: 4,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "острый суп масака",
+            description: "куриное филе, древесные грибы, лапша, тофу, специи табанжан, соус кочудян ",
+            photo: `${Soup4}`,
+            price: 275,
+            weight: 370
         },
         {
             id: 5,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "рамен",
+            photo: `${Soup5}`,
+            description: "куриное филе, древесные грибы, лапша, тофу, специи табанжан, соус кочудян ",
+            price: 185,
+            weight: 370
         },
         {
             id: 6,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "ню миан лапша",
+            description: "суп на основе кисло-сладкого говяжьего бульона с говядиной и удон лапшой",
+            photo: `${Soup6}`,
+            price: 370,
+            weight: 410
         },
         {
             id: 7,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "суп мисо",
+            description: "тофу, шитаки, вакамэ",
+            photo: `${Soup7}`,
+            price: 145,
+            weight: 300,
         },
         {
             id: 8,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "суп би-хун",
+            description: "суп на основе рыбного бульона с ростками фасоли, с золотыми нитями, с азиатской лапшой",
+            photo: `${Soup8}`,
+            price: 250,
+            weight: 350
         },
         {
             id: 9,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "мисо суп с креветкой сливочный",
+            description: "мисо суп с креветкой сливочный",
+            photo: `${Soup9}`,
+            price: 285,
+            weight: 340
         },
         {
             id: 10,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "том ям рамен",
+            description: "тайский традиционный том яс с морепродуктами, с тонкой китайской лапшой",
+            photo: `${Soup10}`,
+            price: 505,
+            weight: 370
         },
         {
             id: 11,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "мисо с семгой",
+            description: "мисо суп с семгой сливочный",
+            photo: `${Soup11}`,
+            price: 295,
+            weight: 340
         },
         {
             id: 12,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "суп том ям",
+            description: "традиционный тайский суп, кокосовое молоко, тигровые креветки, кальмар, томаты черри и чили",
+            photo: `${Soup12}`,
+            price: 495,
+            weight: 350
         }
     ];
 
-  return (
-    <div className="item-menu">
-      <h1>СУПЫ</h1>
-      <ItemMenu items={soups} />
-    </div>
-  );
+    return (
+        <div className="item-menu">
+            <h1>СУПЫ</h1>
+            <ItemMenu items={soups} />
+        </div>
+    );
 };
 
 export default SoupMenu;
