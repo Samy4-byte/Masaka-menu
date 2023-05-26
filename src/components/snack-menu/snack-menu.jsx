@@ -1,199 +1,89 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
+import Snack1 from "../images/Menu/snacks/snack1.png"
+import Snack2 from "../images/Menu/snacks/snack2.png"
+import Snack3 from "../images/Menu/snacks/snack3.png"
+import Snack4 from "../images/Menu/snacks/snack4.png"
+import Snack5 from "../images/Menu/snacks/snack5.png"
+import Snack6 from "../images/Menu/snacks/snack6.png"
+import Snack7 from "../images/Menu/snacks/snack7.png"
+import Snack8 from "../images/Menu/snacks/snack8.png"
+import Snack9 from "../images/Menu/snacks/snack9.png"
 
 const SnackMenu = () => {
     const snacks = [
         {
             id: 1,
-            name: "Овощной крем-суп",
-            ingredients: [
-                "картофель",
-                "морковь",
-                "лук",
-                "помидоры",
-                "брокколи",
-                "сельдерей",
-                "специи"
-            ],
-            description: "Ароматный и питательный овощной крем-суп с мягкими текстурами и богатым вкусом. Идеальное сочетание свежих овощей и специй.",
-            photo: "https://media.istockphoto.com/id/597926666/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B9-%D1%81%D1%83%D0%BF-%D1%81-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%BA%D0%B0.jpg?s=612x612&w=0&k=20&c=zwFI5n72C6ppQsUN7Znda4X1HzVAwo36MtueZtw8gYQ=",
-            price: 5.99
+            name: "блюдо сями императорская трапеза",
+            description: "Сями традиционное корейское блюдо, который состоит из свежих ингридиентов. Контраст вкуса собранного сета дает незабываемое ощущение",
+            photo: `${Snack1}`,
+            weight: "330",
+            price: 525
         },
         {
             id: 2,
-            name: "Грибной крем-суп",
-            ingredients: [
-                "шампиньоны",
-                "лук",
-                "сметана",
-                "перепелиные яйца",
-                "соль",
-                "перец"
-            ],
-            description: "Ароматный грибной крем-суп с нежной текстурой и насыщенным вкусом. Идеальное сочетание свежих шампиньонов и сливок.",
-            photo: "https://smaylovich.ru/upload/iblock/386/38685c29e962feb6ff89498fda495b3b.jpeg",
-            price: 6.99
+            name: "грибы эноки в кисло-острома соусе",
+            description: "Полезные и вкусные грибы эноки приготовленные в кисло-остром соусе",
+            photo: `${Snack2}`,
+            weight: "250",
+            price: 385
         },
         {
             id: 3,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "гедза жареные ",
+            description: "На выбор: гедза с курицей и жусай/ гедза с курицей и зеленымм луком",
+            photo: `${Snack3}`,
+            weight: "200",
+            price: 245
         },
         {
             id: 4,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "яки гедза с соусом милан",
+            description: "На выбор: гедза с курицей и жусай/гедза с курицей и зеленым луком",
+            photo: `${Snack4}`,
+            weight: "200",
+            price: 255
         },
         {
             id: 5,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "судак в кисло-сладком",
+            description: "Судак в кисло-сладком с баклажанами",
+            photo: `${Snack5}`,
+            weight: "250",
+            price: 415
         },
         {
             id: 6,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "токпоки",
+            description: "Одно из самых популярных блюд Южной Кореи. Рисовые клецки в сладко-остром соусе",
+            photo: `${Snack6}`,
+            weight: "220",
+            price: 295
         },
         {
             id: 7,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "запеченные мидии",
+            description: "Запеченные мидии с соусом спайси",
+            photo: `${Snack7}`,
+            weight: "200",
+            price: 515
         },
         {
             id: 8,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "кесадилья с курицей",
+            description: "Кесадилья с курицей в сливочном соусе и грибами, с прослойкой из нежного сыра",
+            photo: `${Snack8}`,
+            weight: "230",
+            price: 355
         },
         {
             id: 9,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 10,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 11,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 12,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "кесадилья с креветками",
+            description: "Кесадилья с креветками в сливочном соусе и грибами, с прослойкой из нежного сыра",
+            photo: `${Snack9}`,
+            weight: "210",
+            price: 405
         }
     ];
 
