@@ -11,10 +11,10 @@
     
     white-space: nowrap;
 }
+
 ::-webkit-scrollbar {
     width: 0;
   }
-
 
 .link {
     display: inline-block;
