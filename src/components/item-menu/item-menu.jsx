@@ -45,12 +45,7 @@ export const ItemMenu = (props) => {
             </span>
             <h2>{selectedItem.name}</h2>
             <img src={selectedItem.photo} alt={selectedItem.name} />
-            {selectedItem.ingredients && (
-              <p>Состав: {selectedItem.ingredients.join(", ")}</p>
-            )}
-            {selectedItem.description && (
-              <p>{selectedItem.description}</p>
-            )}
+            <p>Состав: {selectedItem.ingredientsgit }</p>
             <p>Цена: {selectedItem.price} сом</p>
           </div>
         </div>
