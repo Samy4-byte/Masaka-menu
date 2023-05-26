@@ -52,7 +52,7 @@ export const ItemMenu = (props) => {
               <p>Состав: {selectedItem.ingredients.join(", ")}</p>
             )}
             {selectedItem.description && (
-              <p>{selectedItem.description}</p>
+              <p>Описание: {selectedItem.description}</p>
             )}
             <p>Цена: {selectedItem.price} сом</p>
             {selectedItem.weight && (

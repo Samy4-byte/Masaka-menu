@@ -95,9 +95,7 @@
     text-transform: uppercase;
 }
 
-.modal-content p {
-    text-transform: lowercase;
-}
+
 .close-button {
     position: absolute;
     color: #aaa;
