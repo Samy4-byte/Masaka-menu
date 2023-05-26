@@ -29,6 +29,7 @@ export const ItemMenu = (props) => {
             <p>{item.ingredients.join(",")}</p>
             <p>{item.description}</p>
             <p className="price">Цена: {item.price} сом</p>
+            <p>{item.weight} гр</p>
           </div>
         ))}
       </div>
@@ -43,6 +44,7 @@ export const ItemMenu = (props) => {
             <img src={selectedItem.photo} alt={selectedItem.name} />
             <p>Состав: {selectedItem.ingredients.join(",")}</p>
             <p>Цена: {selectedItem.price} сом</p>
+            <p>Вес: {selectedItem.weight} гр</p>
           </div>
         </div>
       )}
