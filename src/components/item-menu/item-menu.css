@@ -32,11 +32,13 @@
     margin-top: 0;
     text-transform: uppercase;
     color: white;
+    font-size: 20px;
 }
 
 .item-card p {
-    margin-bottom: 10px;
+    margin: 10px 0;
     color: white;
+    /* text-transform: capitalize; */
 }
 
 .item-card .price {
@@ -78,6 +80,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.modal-content h2 {
+    text-transform: uppercase;
+}
+
+.modal-content p {
+    text-transform: lowercase;
+}
 .close-button {
     position: absolute;
     color: #aaa;

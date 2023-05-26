@@ -2,11 +2,29 @@ import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 import Lunch from "../images/Menu/lunch/lunch.png"
+import Lunch2 from "../images/Menu/lunch/lunch5.png"
+import Lunch3 from "../images/Menu/lunch/lunch6.png"
+import Lunch4 from "../images/Menu/lunch/lunch2.png"
+import Lunch5 from "../images/Menu/lunch/lunch3.png"
+import Lunch6 from "../images/Menu/lunch/lunch4.png"
 
 const BuisnessLunchMenu = () => {
     const lunches = [
         {
             id: 1,
+            name: "Бизнес ланч Азия",
+            ingredients: [
+                "кимчи",
+                "рис",
+                "спринг ролл с сыром",
+                "корн дог",
+                "рамен классик"
+            ],
+            photo: `${Lunch2}`,
+            price: 435
+        },
+        {
+            id: 2,
             name: "Сакана Бизнес-ланч",
             ingredients: [
                 "Том Ям",
@@ -17,193 +35,69 @@ const BuisnessLunchMenu = () => {
                 "сельдерей",
                 "специи"
             ],
-            // description: "Ароматный и питательный овощной крем-суп с мягкими текстурами и богатым вкусом. Идеальное сочетание свежих овощей и специй.",
             photo: `${Lunch}`,
             price: 475
         },
         {
-            id: 2,
-            name: "Грибной крем-суп",
-            ingredients: [
-                "шампиньоны",
-                "лук",
-                "сметана",
-                "перепелиные яйца",
-                "соль",
-                "перец"
-            ],
-            description: "Ароматный грибной крем-суп с нежной текстурой и насыщенным вкусом. Идеальное сочетание свежих шампиньонов и сливок.",
-            photo: "https://smaylovich.ru/upload/iblock/386/38685c29e962feb6ff89498fda495b3b.jpeg",
-            price: 6.99
-        },
-        {
             id: 3,
-            name: "Томатный суп",
+            name: "Бизнес ланч Sigoi",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Мойва",
+                "калифорния классик",
+                "рис",
+                "том ям"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Lunch3}`,
+            price: 455
         },
         {
             id: 4,
-            name: "Томатный суп",
+            name: "Бизнес ланч Canno",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Острый суп масака",
+                "рис",
+                "чука",
+                "ростки сои",
+                "калифорния с семгой",
+                "кимчи"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Lunch4}`,
+            price: 295
         },
+
         {
             id: 5,
-            name: "Томатный суп",
+            name: "Бизнес ланч Нихон",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Курица тонкацу",
+                "токпоки",
+                "тофу",
+                "салат",
+                "мимо суп"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Lunch5}`,
+            price: 335
         },
         {
             id: 6,
-            name: "Томатный суп",
+            name: "Бизнес ланч Веган",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Салат чука",
+                "кимчи",
+                "караи тофу",
+                "мисо суп"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Lunch6}`,
+            price: 235
         },
-        {
-            id: 7,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 8,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 9,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 10,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 11,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        },
-        {
-            id: 12,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
-        }
     ];
 
-  return (
-    <div className="item-menu">
-      <h1>БИЗНЕС ЛАНЧИ</h1>
-      <ItemMenu items={lunches} />
-    </div>
-  );
+    return (
+        <div className="item-menu">
+            <h1>БИЗНЕС ЛАНЧИ</h1>
+            <ItemMenu items={lunches} />
+        </div>
+    );
 };
 
 export default BuisnessLunchMenu;
