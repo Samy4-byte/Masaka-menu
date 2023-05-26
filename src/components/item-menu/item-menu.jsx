@@ -51,7 +51,7 @@ export const ItemMenu = (props) => {
             {selectedItem.description && (
               <p>{selectedItem.description}</p>
             )}
-            <p>Цена: {selectedItem.price} сомов</p>
+            <p>Цена: {selectedItem.price} сом</p>
           </div>
         </div>
       )}
