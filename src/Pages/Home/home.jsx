@@ -2,7 +2,6 @@ import H from "./home.module.css"
 import React from "react"
 import Column from "../../components/images/JPG/masaka-column.jpg"
 import Nav from "../../components/nav/index"
-import Layout from "../../components/layout/index"
 
 const Home = () => {
     return(

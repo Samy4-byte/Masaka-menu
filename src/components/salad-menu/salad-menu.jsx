@@ -1,199 +1,189 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
+import Salad1 from "../images/Menu/salads/salad1.png"
+import Salad2 from "../images/Menu/salads/salad2.png"
+import Salad3 from "../images/Menu/salads/salad3.png"
+import Salad4 from "../images/Menu/salads/salad4.png"
+import Salad5 from "../images/Menu/salads/salad5.png"
+import Salad6 from "../images/Menu/salads/salad6.png"
+import Salad7 from "../images/Menu/salads/salad7.png"
+import Salad8 from "../images/Menu/salads/salad8.png"
+import Salad9 from "../images/Menu/salads/salad9.png"
+import Salad10 from "../images/Menu/salads/salad10.png"
+import Salad11 from "../images/Menu/salads/salad11.png"
+import Salad12 from "../images/Menu/salads/salad12.png"
+import Salad13 from "../images/Menu/salads/salad13.png"
+import Salad14 from "../images/Menu/salads/salad14.png"
+import Salad15 from "../images/Menu/salads/salad15.png"
+import Salad16 from "../images/Menu/salads/salad16.png"
+import Salad17 from "../images/Menu/salads/salad17.png"
 
 const SaladMenu = () => {
     const salads = [
         {
             id: 1,
-            name: "Овощной крем-суп",
-            ingredients: [
-                "картофель",
-                "морковь",
-                "лук",
-                "помидоры",
-                "брокколи",
-                "сельдерей",
-                "специи"
-            ],
-            description: "Ароматный и питательный овощной крем-суп с мягкими текстурами и богатым вкусом. Идеальное сочетание свежих овощей и специй.",
-            photo: "https://media.istockphoto.com/id/597926666/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B9-%D1%81%D1%83%D0%BF-%D1%81-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%BA%D0%B0.jpg?s=612x612&w=0&k=20&c=zwFI5n72C6ppQsUN7Znda4X1HzVAwo36MtueZtw8gYQ=",
-            price: 5.99
+            name: "салат с семгой",
+            description: "Микс из салатов, лоло росса, шпината, авокадо, марокканским кускусом и ореховым соусом",
+            photo: `${Salad1}`,
+            weight: "300",
+            price: 545
         },
         {
             id: 2,
-            name: "Грибной крем-суп",
-            ingredients: [
-                "шампиньоны",
-                "лук",
-                "сметана",
-                "перепелиные яйца",
-                "соль",
-                "перец"
-            ],
-            description: "Ароматный грибной крем-суп с нежной текстурой и насыщенным вкусом. Идеальное сочетание свежих шампиньонов и сливок.",
-            photo: "https://smaylovich.ru/upload/iblock/386/38685c29e962feb6ff89498fda495b3b.jpeg",
-            price: 6.99
+            name: "салат микс с семгой",
+            description: "Микс из салатов, лоло росса, киноа, слабосоленной семгой, заправленным с сладким масломм и томатом черри",
+            photo: `${Salad2}`,
+            weight: "300",
+            price: 475
         },
         {
             id: 3,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "салат песто",
+            description: "Свежие брокколи и цветная капуста в кляре с соевым тофу, томатами черри, заправленные соусом песто",
+            photo: `${Salad3}`,
+            weight: "320",
+            price: 265
         },
         {
             id: 4,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "салат пп",
+            description: "Салат с брокколи и цветной капустой, соевым тофу, маслинами и томатом черри",
+            photo: `${Salad4}`,
+            weight: "300",
+            price: 255
         },
         {
             id: 5,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "битые огурцы",
+            description: "Битые огурцы по-китайски, заправленным соевым соусом и кунжутным маслом",
+            photo: `${Salad5}`,
+            weight: "200",
+            price: 220
         },
         {
             id: 6,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "салат с руккола с листьями и с курицей",
+            description: "Салат с ароматным пикантно-островатым вкусом рукколы, жаренным куриным филе в кляре, томатом черри и домашним соусом",
+            photo: `${Salad6}`,
+            weight: "340",
+            price: 325
         },
         {
             id: 7,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "салат с курицей и с киноа",
+            description: "Микс из салатов, лоло росса, киноа, заправленным сладким маслом и томатом черри",
+            photo: `${Salad7}`,
+            weight: "300",
+            price: 365
         },
         {
             id: 8,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "салат цезарь с креветками",
+            description: "Легендарный салат с креветками под соусом цезарь, выбор ценителей изыска",
+            photo: `${Salad8}`,
+            weight: "340",
+            price: 385
         },
         {
             id: 9,
-            name: "Томатный суп",
+            name: "салат греческий",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Помидоры", 
+                "огурцы",
+                "маслины", 
+                "сыр фетакса",
+                "красный лук", 
+                "микс салата", "оливковое масло"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Salad9}`,
+            weight: "290",
+            price: 325
         },
         {
             id: 10,
-            name: "Томатный суп",
+            name: "хрустящий баклажан",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Баклажан",
+                "томат черри",
+                "микс салата",
+                "древесные грибы",
+                "соус свит чили"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Salad10}`,
+            weight: "250",
+            price: 325
         },
         {
             id: 11,
-            name: "Томатный суп",
-            ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
-            ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            name: "баклажан со свит чили",
+            description: "Жареные баклажанные палочки в кисло-сладком соусе",
+            photo: `${Salad11}`,
+            weight: "250",
+            price: 320
         },
         {
             id: 12,
-            name: "Томатный суп",
+            name: "салат чука с семгой",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Чука",
+                "семга",
+                "ореховый соус",
+                "кунжут"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Salad12}`,
+            weight: "180",
+            price: 395
+        },
+        {
+            id: 13,
+            name: "летний салат с манговой заправкой",
+            ingredients: [
+                "Помидоры",
+                "шпинат",
+                "листья салата",
+                "огурцы",
+                "лук красный",
+                "кедровые орешки",
+                "манговая заправка"
+            ],
+            photo: `${Salad13}`,
+            weight: "290",
+            price: 325
+        },
+        {
+            id: 14,
+            name: "моящи",
+            description: "Салат с ростками фасоли со шпинатом, заправленное кунжутным маслом и травяным бульоном",
+            photo: `${Salad14}`,
+            weight: "110",
+            price: 170
+        },
+        {
+            id: 15,
+            name: "острая фасоль в кляре",
+            ingredients: [
+                "Стручковая фасоль",
+                "перец"
+            ],
+            photo: `${Salad15}`,
+            weight: "220",
+            price: 255
+        },
+        {
+            id: 16,
+            name: "Кимчи",
+            photo: `${Salad16}`,
+            weight: "80",
+            price: 100
+        },
+        {
+            id: 17,
+            name: "пак-чой",
+            description: "Китайская листовая капуста. обжаренная в чесноке, с соевым соусом",
+            photo: `${Salad17}`,
+            weight: "290",
+            price: 315
         }
     ];
 
