@@ -58,6 +58,9 @@
     background-color: rgb(21, 23, 21);
     border: none;
 }
+.item-weight {
+    color: #ffff;
+}
 
 
 /* modal css */
@@ -117,6 +120,7 @@
     width: 100%;
     max-height: 400px;
     object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 10px;
