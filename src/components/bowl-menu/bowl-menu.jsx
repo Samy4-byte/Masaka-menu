@@ -1,8 +1,8 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import bowl1 from '../images/Menu/bowl/bowls4.png'
-import bowl2 from '../images/Menu/bowl/bowl1.png'
-import bowl3 from '../images/Menu/bowl/bowls3.png'
+import bowl4 from '../images/Menu/bowl/bowls3.png'
+import bowl5 from '../images/Menu/bowl/bowl1.png'
 import bowl6 from '../images/Menu/bowl/bowls2.png'
 
 import { ItemMenu } from "../item-menu/item-menu";
@@ -21,14 +21,14 @@ const BowlMenu = () => {
             id: 2,
             name: "поке боул вегетерианский",
             description: "Поке боул веган с овощами и витаминной бомбой по-азиатски",
-            photo: `${bowl2}`,
+            // photo: `${bowl2}`,
             price: 375,
             weight: 440
         },
         {
             id: 3,
             name: "гавайский традиционный поке боул",
-            photo: `${bowl1}`,
+            // photo: `${bowl1}`,
             price: 375,
             weight: 480
         },
@@ -37,7 +37,7 @@ const BowlMenu = () => {
             id: 4,
             name: "поке боул с угрем",
             description: "Поке боул с угрем в соусе унаги, c овощами и витаминной наброской.",
-            photo: `${bowl3}`,
+            photo: `${bowl4}`,
             price: 585,
             weight: 440
         },
@@ -45,7 +45,7 @@ const BowlMenu = () => {
             id: 5,
             name: "поке боул с семгой",
             description: "поке боул с семгой , овощами, и салатной заправкой",
-            photo: `${bowl1}`,
+            photo: `${bowl5}`,
             price: 565,
             weight: 480 
         },

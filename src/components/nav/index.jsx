@@ -62,7 +62,7 @@ const links = [
     {
         id: 12,
         text: 'Гунканы и Суси',
-        route: '/susi'
+        route: '/gunkan'
     },
     {
         id: 13,

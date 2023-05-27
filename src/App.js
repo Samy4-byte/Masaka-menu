@@ -12,7 +12,7 @@ import { BeefPage } from './Pages/Beef/beef';
 import { SnacksPage } from './Pages/Snacks/snacks';
 import { ChickenPage } from './Pages/Chicken/chicken';
 import { NoodlesPage } from './Pages/Noodles/noodle';
-import { SusiPage } from './Pages/Susi/susi';
+import { GunkanPage, SusiPage } from './Pages/Gunkan/gunkan';
 import { RollsPage } from './Pages/Rolls/roll';
 import { BackedRollsPage } from './Pages/Baked_rolls/baked_rolls';
 import { TempuraRollsPage } from './Pages/Tempura_rolls/tempura_rolls';
@@ -40,7 +40,7 @@ export const App = () => {
           <Route path='/fish' element={ <FishPage/> }/>
           <Route path='/noodles' element={< NoodlesPage />}/>
           <Route path='/wok' element={<WokPage />} />
-          <Route path='/susi' element={<SusiPage />} />
+          <Route path='/gunkan' element={<GunkanPage />} />
           <Route path='/rolls' element={<RollsPage />} />
           <Route path='/baked-rolls' element={<BackedRollsPage />} />
           <Route path='/tempura-rolls' element={<TempuraRollsPage />} />
