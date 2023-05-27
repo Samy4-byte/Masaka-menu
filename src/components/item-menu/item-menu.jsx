@@ -46,7 +46,9 @@ export const ItemMenu = (props) => {
              {item.weight2 && (
                <p>{item.weight2} гр</p>
              )}
-
+           {item.count && (
+             <p>{item.count} шт</p>//
+           )}
           </div>
         ))}
       </div>
@@ -68,6 +70,9 @@ export const ItemMenu = (props) => {
             <p>Цена: {selectedItem.price} сом</p>
             {selectedItem.weight && (
               <p>Вес: {selectedItem.weight} гр</p>
+            )}
+            {selectedItem.count && (
+              <p>Количество: {selectedItem.count} шт</p>
             )}
           </div>
         </div>
