@@ -1,15 +1,15 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
-import Snack1 from "../images/Menu/snacks/snack1.png"
-import Snack2 from "../images/Menu/snacks/snack2.png"
-import Snack3 from "../images/Menu/snacks/snack3.png"
-import Snack4 from "../images/Menu/snacks/snack4.png"
-import Snack5 from "../images/Menu/snacks/snack5.png"
-import Snack6 from "../images/Menu/snacks/snack6.png"
-import Snack7 from "../images/Menu/snacks/snack7.png"
-import Snack8 from "../images/Menu/snacks/snack8.png"
-import Snack9 from "../images/Menu/snacks/snack9.png"
+import Snack1 from "../images/Menu/snack/snack1.png"
+import Snack2 from "../images/Menu/snack/snack2.png"
+import Snack3 from "../images/Menu/snack/snack3.png"
+import Snack4 from "../images/Menu/snack/snack4.png"
+import Snack5 from "../images/Menu/snack/snack5.png"
+import Snack6 from "../images/Menu/snack/snack6.png"
+import Snack7 from "../images/Menu/snack/snack7.png"
+import Snack8 from "../images/Menu/snack/snack8.png"
+import Snack9 from "../images/Menu/snack/snack9.png"
 
 const SnackMenu = () => {
     const snacks = [
