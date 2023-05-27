@@ -1,14 +1,14 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
-import Susi1 from "../images/Menu/susi/susi1.png"
-import Susi2 from "../images/Menu/susi/susi2.png"
-import Susi3 from "../images/Menu/susi/susi3.png"
-import Susi5 from "../images/Menu/susi/susi5.png"
-import Susi7 from "../images/Menu/susi/susi7.png"
+import Susi1 from "../images/Menu/gunkan/susi1.png"
+import Susi2 from "../images/Menu/gunkan/susi2.png"
+import Susi3 from "../images/Menu/gunkan/susi3.png"
+import Susi5 from "../images/Menu/gunkan/susi5.png"
+import Susi7 from "../images/Menu/gunkan/susi7.png"
 
-const SusiMenu = () => {
-    const susis = [
+const GunkanMenu = () => {
+    const gunkans = [
         {
             id: 1,
             name: "гункан с крабом",
@@ -63,12 +63,12 @@ const SusiMenu = () => {
   return (
     <div className="item-menu">
       <h1>ГУНКАНЫ И СУСИ</h1>
-      <ItemMenu items={susis} />
+      <ItemMenu items={gunkans} />
     </div>
   );
 };
 
-export default SusiMenu;
+export default GunkanMenu;
 
 
 
