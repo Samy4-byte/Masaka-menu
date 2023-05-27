@@ -3,7 +3,7 @@ import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 import Kid1 from "../images/Menu/kids/kid1.png"
 import Kid2 from "../images/Menu/kids/kid2.png"
-import Kid3 from "../images/Menu/kids/kid3.png"
+import Kid3 from "../images/Menu/baked-roll/MASAKA SUSHI.png"
 
 const KidMenu = () => {
     const kids = [

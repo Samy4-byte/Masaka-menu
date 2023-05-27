@@ -52,7 +52,13 @@ const SoupMenu = () => {
             id: 5,
             name: "рамен",
             photo: `${Soup5}`,
-            description: "куриное филе, древесные грибы, лапша, тофу, специи табанжан, соус кочудян ",
+
+            ingredients: [
+                "курица",
+                "говядина",
+                "сыр",
+                "яйцо куриное"
+            ],
             price: 185,
             weight: 370
         },
@@ -67,7 +73,11 @@ const SoupMenu = () => {
         {
             id: 7,
             name: "суп мисо",
-            description: "тофу, шитаки, вакамэ",
+            ingredients: [
+                "тофу",
+                "шитаки",
+                "вакамэ",
+            ],
             photo: `${Soup7}`,
             price: 145,
             weight: 300,
