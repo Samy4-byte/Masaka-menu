@@ -2,9 +2,13 @@ import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
 import Tempura1 from "../images/Menu/tempura/tempura1.png"
+import Tempura2 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
+import Tempura3 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
+import Tempura4 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
 import Tempura5 from "../images/Menu/tempura/tempura5.png"
 import Tempura6 from "../images/Menu/tempura/tempura6.png"
 import Tempura7 from "../images/Menu/tempura/tempura7.png"
+import Tempura8 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
 const TempuraRollMenu = () => {
     const tempuras = [
         {
@@ -33,7 +37,7 @@ const TempuraRollMenu = () => {
                 "сыр виола",
                 "огурец"
             ],
-            // photo: `${Tempura2}`,
+            photo: `${Tempura2}`,
             price: 345,
             weight: 280
         },
@@ -48,7 +52,7 @@ const TempuraRollMenu = () => {
                 "фирменный соус",
                 "пармезан"
             ],
-            // photo: `${Tempura3}`,
+            photo: `${Tempura3}`,
             price: 345,
             weight: 300
         },
@@ -64,7 +68,7 @@ const TempuraRollMenu = () => {
                 "унаги соус",
                 "спайси соус"
             ],
-            // photo: `${Tempura4}`,
+            photo: `${Tempura4}`,
             price: 345,
             weight: 280
         },
@@ -118,7 +122,7 @@ const TempuraRollMenu = () => {
                 "сыр виола", 
                 "ореховый соус"
             ],
-            // photo: `${Tempura8}`,
+            photo: `${Tempura8}`,
             price: 345,
             weight: 280
         }

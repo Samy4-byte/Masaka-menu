@@ -1,11 +1,13 @@
 import React from "react";
 import "../item-menu/item-menu.css";
-import bowl1 from '../images/Menu/bowl/bowls4.png'
-import bowl4 from '../images/Menu/bowl/bowls3.png'
-import bowl5 from '../images/Menu/bowl/bowl1.png'
-import bowl6 from '../images/Menu/bowl/bowls2.png'
-
+import bowl1 from '../images/Menu/bowl/bowl1.png'
+import bowl2 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
+import bowl3 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
+import bowl4 from '../images/Menu/bowl/bowl4.png'
+import bowl5 from '../images/Menu/bowl/bowl5.png'
+import bowl6 from '../images/Menu/bowl/bowl6.png'
 import { ItemMenu } from "../item-menu/item-menu";
+
 
 const BowlMenu = () => {
     const bowls = [
@@ -21,14 +23,14 @@ const BowlMenu = () => {
             id: 2,
             name: "поке боул вегетерианский",
             description: "Поке боул веган с овощами и витаминной бомбой по-азиатски",
-            // photo: `${bowl2}`,
+            photo: `${bowl2}`,
             price: 375,
             weight: 440
         },
         {
             id: 3,
             name: "гавайский традиционный поке боул",
-            // photo: `${bowl1}`,
+            photo: `${bowl3}`,
             price: 375,
             weight: 480
         },
