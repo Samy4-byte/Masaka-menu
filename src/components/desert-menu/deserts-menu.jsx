@@ -20,14 +20,14 @@ const DesertMenu = () => {
             name: "моти",
             photo: `${Desert2}`,
             price: 240,
-            weight: 1
+            count: 1
         },
         {
             id: 3,
             name: "десертные роллы",       
             photo: `${Desert3}`,
             price: 250,
-            weight: 150
+            weight: 150 
         }
     ];
 
