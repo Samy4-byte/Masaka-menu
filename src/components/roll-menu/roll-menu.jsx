@@ -1,199 +1,621 @@
 import React from "react";
 import "../item-menu/item-menu.css";
 import { ItemMenu } from "../item-menu/item-menu";
+import Roll1 from "../images/Menu/rolls/roll1.png"
+import Roll2 from "../images/Menu/rolls/roll2.png"
+import Roll3 from "../images/Menu/rolls/roll3.png"
+import Roll4 from "../images/Menu/rolls/roll4.png"
+import Roll5 from "../images/Menu/rolls/roll5.png"
+import Roll6 from "../images/Menu/rolls/roll6.png"
+import Roll7 from "../images/Menu/rolls/roll7.png"
+import Roll8 from "../images/Menu/rolls/roll8.png"
+import Roll9 from "../images/Menu/rolls/roll9.png"
+import Roll10 from "../images/Menu/rolls/roll10.png"
+import Roll11 from "../images/Menu/rolls/roll11.png"
+import Roll12 from "../images/Menu/rolls/roll12.png"
+import Roll13 from "../images/Menu/rolls/roll13.png"
+import Roll14 from "../images/Menu/rolls/roll14.png"
+import Roll15 from "../images/Menu/rolls/roll15.png"
+import Roll16 from "../images/Menu/rolls/roll16.png"
+import Roll17 from "../images/Menu/rolls/roll17.png"
+import Roll18 from "../images/Menu/rolls/roll18.png"
+import Roll19 from "../images/Menu/rolls/roll19.png"
+import Roll20 from "../images/Menu/rolls/roll20.png"
+import Roll21 from "../images/Menu/rolls/roll21.png"
+import Roll22 from "../images/Menu/rolls/roll22.png"
+import Roll23 from "../images/Menu/rolls/roll23.png"
+import Roll24 from "../images/Menu/rolls/roll24.png"
+import Roll25 from "../images/Menu/rolls/roll25.png"
+import Roll26 from "../images/Menu/rolls/roll26.png"
+import Roll27 from "../images/Menu/rolls/roll27.png"
+import Roll28 from "../images/Menu/rolls/roll28.png"
+import Roll29 from "../images/Menu/rolls/roll29.png"
+import Roll30 from "../images/Menu/rolls/roll30.png"
+import Roll31 from "../images/Menu/rolls/roll31.png"
+import Roll32 from "../images/Menu/rolls/roll32.png"
+import Roll33 from "../images/Menu/rolls/roll33.png"
+import Roll34 from "../images/Menu/rolls/roll34.png"
+import Roll35 from "../images/Menu/rolls/roll35.png"
+import Roll36 from "../images/Menu/rolls/roll36.png"
+import Roll37 from "../images/Menu/rolls/roll37.png"
+import Roll38 from "../images/Menu/rolls/roll38.png"
+import Roll39 from "../images/Menu/rolls/roll39.png"
+import Roll40 from "../images/Menu/rolls/roll40.png"
+import Roll41 from "../images/Menu/rolls/roll41.png"
+
 
 const RollMenu = () => {
     const rolls = [
         {
             id: 1,
-            name: "Овощной крем-суп",
+            name: "ролл без риса",
             ingredients: [
-                "картофель",
-                "морковь",
-                "лук",
-                "помидоры",
-                "брокколи",
-                "сельдерей",
-                "специи"
+                "Лосось",
+                "томаго",
+                "огурец",
+                "снежный краб",
+                "салатные листья",
+                "сыр творожный"
             ],
-            description: "Ароматный и питательный овощной крем-суп с мягкими текстурами и богатым вкусом. Идеальное сочетание свежих овощей и специй.",
-            photo: "https://media.istockphoto.com/id/597926666/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B3%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B9-%D1%81%D1%83%D0%BF-%D1%81-%D0%BF%D0%B5%D1%82%D1%80%D1%83%D1%88%D0%BA%D0%B0.jpg?s=612x612&w=0&k=20&c=zwFI5n72C6ppQsUN7Znda4X1HzVAwo36MtueZtw8gYQ=",
-            price: 5.99
+            photo: `${Roll1}`,
+            weight: "200",
+            price: 495
         },
         {
             id: 2,
-            name: "Грибной крем-суп",
+            name: "тори маки",
             ingredients: [
-                "шампиньоны",
-                "лук",
-                "сметана",
-                "перепелиные яйца",
-                "соль",
-                "перец"
+                "Помидор",
+                "нежный сыр",
+                "куриное филе",
+                "масаго"
             ],
-            description: "Ароматный грибной крем-суп с нежной текстурой и насыщенным вкусом. Идеальное сочетание свежих шампиньонов и сливок.",
-            photo: "https://smaylovich.ru/upload/iblock/386/38685c29e962feb6ff89498fda495b3b.jpeg",
-            price: 6.99
+            photo: `${Roll2}`,
+            weight: "220",
+            price: 235
         },
         {
             id: 3,
-            name: "Томатный суп",
+            name: "темпура саке",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Нежный сыр",
+                "лосось",
+                "огурец",
+                "унаги",
+                "спайси соус"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll3}`,
+            weight: "250",
+            price: 325
         },
         {
             id: 4,
-            name: "Томатный суп",
+            name: "ролл роял",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Микс кунжута",
+                "нежный сыр",
+                "копченная курица",
+                "огурец",
+                "лосось"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll4}`,
+            weight: "280",
+            price: 355
         },
         {
             id: 5,
-            name: "Томатный суп",
+            name: "томаго маки",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Японский омлет",
+                "креветки",
+                "авокадо",
+                "нежный сыр",
+                "унаги соус",
+                "кунжут"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll5}`,
+            weight: "280",
+            price: 295
         },
         {
             id: 6,
-            name: "Томатный суп",
+            name: "ролл хакайдо",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Хрустящие креветки",
+                "авокадо",
+                "масаго",
+                "унаги",
+                "спайси соус"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll6}`,
+            weight: "220",
+            price: 325
         },
         {
             id: 7,
-            name: "Томатный суп",
+            name: "ролл матия",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Нежный сыр",
+                "авокадо",
+                "снежный краб",
+                "тунец",
+                "сыр чедер",
+                "унаги соус"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll7}`,
+            weight: "255",
+            price: 425
         },
         {
             id: 8,
-            name: "Томатный суп",
+            name: "ролл токиа",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Японский омлет",
+                "огурец",
+                "нежный сыр",
+                "лосось"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll8}`,
+            weight: "280",
+            price: 435
         },
         {
             id: 9,
-            name: "Томатный суп",
+            name: "темпура лосось",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Помидор",
+                "нежный сыр",
+                "болгарский перец",
+                "масаго",
+                "лосось",
+                "соус сливочный"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll9}`,
+            weight: "280",
+            price: 275
         },
         {
             id: 10,
-            name: "Томатный суп",
+            name: "тар тар ролл",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Жаренный лосось",
+                "помидор",
+                "нежный сыр",
+                "тунец",
+                "соус сливочный",
+                "унаги",
+                "спайси"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll10}`,
+            weight: "270",
+            price: 395
         },
         {
             id: 11,
-            name: "Томатный суп",
+            name: "ролл панко",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Нежный сыр",
+                "копченная курица",
+                "спайси соус"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll11}`,
+            weight: "220",
+            price: 225
         },
         {
             id: 12,
-            name: "Томатный суп",
+            name: "татами",
             ingredients: [
-                "помидоры",
-                "лук",
-                "морковь",
-                "чеснок",
-                "базилик",
-                "соль",
-                "сахар"
+                "Нежный сыр",
+                "огурец",
+                "хрустящая креветка",
+                "болгарский перец",
+                "спайси",
+                "соус"
             ],
-            description: "Ароматный томатный суп с насыщенным вкусом и легкой кислинкой. Идеальное сочетание спелых помидоров и свежих трав.",
-            photo: "https://cdn.bahroma1.ru/goods/tom_yam_nov.jpg",
-            price: 4.99
+            photo: `${Roll12}`,
+            weight: "250",
+            price: 235
+        },
+        {
+            id: 13,
+            name: "ойси",
+            ingredients: [
+                "Нежный сыр",
+                "лосось",
+                "листья салата",
+                "масаго",
+                "спайси соус"
+            ],
+            photo: `${Roll13}`,
+            weight: "220",
+            price: 305
+        },
+        {
+            id: 14,
+            name: "чиз ролл",
+            ingredients: [
+                "Снежный краб",
+                "омлет",
+                "спайси соус",
+                "сыр чедер"
+            ],
+            photo: `${Roll14}`,
+            weight: "220",
+            price: 225
+        },
+        {
+            id: 15,
+            name: "сакаи темпура",
+            ingredients: [
+                "Лосось",
+                "угорь",
+                "нежный сыр",
+                "салатыне листья",
+                "соус сливочный"
+            ],
+            photo: `${Roll15}`,
+            weight: "150",
+            price: 425
+        },
+        {
+            id: 16,
+            name: "темпура унаги",
+            ingredients: [
+                "нежный сыр",
+                "угорь",
+                "огурец",
+                "унаги",
+                "спайси соус"
+            ],
+            photo: `${Roll16}`,
+            weight: "230",
+            price: 275
+        },
+        {
+            id: 17,
+            name: "запеченный унаги",
+            ingredients: [
+                "огурец",
+                "жареный лосось",
+                "нежный сыр",
+                "угорь",
+                "спайси соус"
+            ],
+            photo: `${Roll17}`,
+            weight: "230",
+            price: 445
+        },
+        {
+            id: 18,
+            name: "жаренная чука",
+            ingredients: [
+                "нежный сыр",
+                "чука",
+                "масаго",
+                "унаги",
+                "спайси соус"
+            ],
+            photo: `${Roll18}`,
+            weight: "225",
+            price: 275
+        },
+        {
+            id: 19,
+            name: "калифорния классик",
+            ingredients: [
+                "авокадо",
+                "огурец",
+                "снежный краб",
+                "тобико"
+            ],
+            photo: `${Roll19}`,
+            weight: "250",
+            price: 295
+        },
+        {
+            id: 20,
+            name: "филадельфия классик",
+            ingredients: [
+                "нежный сыр",
+                "семга",
+                "огурец"
+            ],
+            photo: `${Roll20}`,
+            weight: "280",
+            price: 425
+        },
+        {
+            id: 21,
+            name: "калифорния люкс",
+            ingredients: [
+                "тигровые креветки",
+                "авокадо",
+                "нежный сыр",
+                "тобико"
+            ],
+            photo: `${Roll21}`,
+            weight: "250",
+            price: 395
+        },
+        {
+            id: 22,
+            name: "филадельфия люкс",
+            ingredients: [
+                "семга",
+                "нежный сыр",
+                "огурец",
+                "игра семги",
+                "лук зеленый"
+            ],
+            photo: `${Roll22}`,
+            weight: "290",
+            price: 535
+        },
+        {
+            id: 41,
+            name: "филадельфия с крабом",
+            ingredients: [
+                "семга",
+                "снежный краб",
+                "нежный сыр",
+                "тобико",
+                "спайси соус"
+            ],
+            photo: `${Roll41}`,
+            weight: "260",
+            price: 415
+        },
+        {
+            id: 23,
+            name: "калифорния с семгой",
+            ingredients: [
+                "нежный сыр",
+                "огурец",
+                "семга",
+                "тобико"
+            ],
+            photo: `${Roll23}`,
+            weight: "250",
+            price: 325
+        },
+        {
+            id: 24,
+            name: "филадельфия маки",
+            ingredients: [
+                "нежный сыр",
+                "семга",
+                "лук зеленый"
+            ],
+            photo: `${Roll24}`,
+            weight: "275",
+            price: 530
+        },
+        {
+            id: 25,
+            name: "литтл масака",
+            ingredients: [
+                "тобико",
+                "авокадо",
+                "семга",
+                "снежный краб",
+                "угорь",
+                "стужка тунца",
+                "сыр",
+                "соус унаги"
+            ],
+            photo: `${Roll25}`,
+            weight: "250",
+            price: 365
+        },
+        {
+            id: 26,
+            name: "лава",
+            ingredients: [
+                "нежный сыр",
+                "снежный краб",
+                "семга",
+                "огурец",
+                "лава"
+            ],
+            photo: `${Roll26}`,
+            weight: "330",
+            price: 375
+        },
+        {
+            id: 27,
+            name: "фуджи",
+            ingredients: [
+                "сыр",
+                "копченный лосось",
+                "огурец"
+            ],
+            photo: `${Roll27}`,
+            weight: "250",
+            price: 305
+        },
+        {
+            id: 28,
+            name: "дует",
+            ingredients: [
+                "листья салата",
+                "тобико",
+                "сыр"
+            ],
+            photo: `${Roll28}`,
+            weight: "250",
+            price: 485
+        },
+        {
+            id: 29,
+            name: "бостон",
+            ingredients: [
+                "тунец",
+                "кунжут",
+                "тобико",
+                "нежный сыр",
+                "авокадо",
+                "икра семги"
+            ],
+            photo: `${Roll29}`,
+            weight: "240",
+            price: 365
+        },
+        {
+            id: 30,
+            name: "каролина",
+            ingredients: [
+                "угорь",
+                "нежный сыр",
+                "семга",
+                "огурец",
+                "унаги соус"
+            ],
+            photo: `${Roll30}`,
+            weight: "270",
+            price: 515
+        },
+        {
+            id: 31,
+            name: "унаги филка",
+            ingredients: [
+                "угорь",
+                "нежный сыр",
+                "огурец",
+                "унаги соус"
+            ],
+            photo: `${Roll31}`,
+            weight: "280",
+            price: 465
+        },
+        {
+            id: 32,
+            name: "магуро",
+            ingredients: [
+                "тунец",
+                "снежный краб",
+                "авокадо",
+                "огурец",
+                "спайси соус",
+                "кунжут"
+            ],
+            photo: `${Roll32}`,
+            weight: "260",
+            price: 315
+        },
+        {
+            id: 33,
+            name: "тайгер",
+            ingredients: [
+                "тигровая креветка",
+                "нежный сыр",
+                "семга",
+                "лимон"
+            ],
+            photo: `${Roll33}`,
+            weight: "280",
+            price: 475
+        },
+        {
+            id: 34,
+            name: "тортилья веган",
+            ingredients: [
+                "нежный сыр",
+                "лист салата",
+                "огурец",
+                "болгарский перец",
+                "помидор"
+            ],
+            photo: `${Roll34}`,
+            weight: "200",
+            price: 205
+        },
+        {
+            id: 35,
+            name: "тортилья с семгой",
+            ingredients: [
+                "нежный сыр",
+                "лист салата",
+                "огурец",
+                "лук зеленый",
+                "семга"
+            ],
+            photo: `${Roll35}`,
+            weight: "280",
+            price: 295  
+        },
+        {
+            id: 36,
+            name: "дракон люкс",
+            ingredients: [
+                "нежный сыр",
+                "авокадо",
+                "тигровая креветки",
+                "угорь",
+                "тобико"
+            ],
+            photo: `${Roll36}`,
+            weight: "250",
+            price: 575
+        },
+        {
+            id: 37,
+            name: "дракон",
+            ingredients: [
+                "снежный краб",
+                "угорь",
+                "авокадо",
+                "огурец",
+                "кунжут",
+                "унаги соус"
+            ],
+            photo: `${Roll37}`,
+            weight: "250",
+            price: 485
+        },
+        {
+            id: 38,
+            name: "краб креветка",
+            ingredients: [
+                "нежный сыр",
+                "краб",
+                "тигровая креветка",
+                "кунжут",
+                "спайси соус"
+            ],
+            photo: `${Roll38}`,
+            weight: "250",
+            price: 285
+        },
+        {
+            id: 39,
+            name: "хрустящий ролл",
+            ingredients: [
+                "угорь",
+                "нежный сыр",
+                "помидор",
+                "чипсы",
+                "спайси соус"
+            ],
+            photo: `${Roll39}`,
+            weight: "220",
+            price: 315
+        },
+        {
+            id: 40,
+            name: "камикадзе",
+            ingredients: [
+                "семга",
+                "угорь",
+                "перец болгарский",
+                "салат чука",
+                "нежный сыр",
+                "тобико",
+                "спайси соус"
+            ],
+            photo: `${Roll40}`,
+            weight: "250",
+            price: 585
         }
     ];
 
