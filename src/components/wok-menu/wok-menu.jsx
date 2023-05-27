@@ -16,7 +16,7 @@ const WokMenu = () => {
             weight: "300",
             price: 405
         },
-        {
+        {   
             id: 2,
             name: "вок с курицей",
             ingredients: [
@@ -26,19 +26,19 @@ const WokMenu = () => {
             ],
             weight: "320",
             price: 305,
-            name: "вок с говядиной",
-            ingredients: [
+            name2: "вок с говядиной",
+            ingredients2: [
                 "Говядина",
                 "овощи",
                 "лапша удон",
             ],
             photo: `${Wok2}`,
-            weight: "320",
-            price: 375
+            weight2: "320",
+            price2: 375
         },
         {
             id: 3,
-            name: "вок с куричей в сливочном соусе",
+            name: "вок с курицей в сливочном соусе",
             ingredients: [
                 "Курица",
                 "лапша удон",
