@@ -2,7 +2,7 @@ import React from "react";
 import "../item-menu/item-menu.css";
 import bowl1 from '../images/Menu/bowl/bowl1.png'
 import bowl2 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
-import bowl3 from '../images/Menu/baked-roll/MASAKA SUSHI.png'
+import bowl3 from '../images/Menu/bowl/bowl3.jpg'
 import bowl4 from '../images/Menu/bowl/bowl4.png'
 import bowl5 from '../images/Menu/bowl/bowl5.png'
 import bowl6 from '../images/Menu/bowl/bowl6.png'

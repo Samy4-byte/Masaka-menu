@@ -28,14 +28,25 @@ export const ItemMenu = (props) => {
             <h2>{item.name}</h2>
             {item.ingredients && (
               <p>{item.ingredients.join(", ")}</p>
-            )}
+              )}
             {item.description && (
               <p>{item.description}</p>
-            )}
+              )}
             <p className="price">Цена: {item.price} сом</p>
            {item.weight && (
-             <p>{item.weight} гр</p>//
-           )}
+             <p>{item.weight} гр</p>
+             )}
+             <h2>{item.name2}</h2>
+             {item.ingredients2 && (
+               <p>{item.ingredients2.join(", ")}</p>
+             )}
+             {item.price2 && (
+               <p className="price">Цена: {item.price2} сом</p>
+             )}
+             {item.weight2 && (
+               <p>{item.weight2} гр</p>
+             )}
+
           </div>
         ))}
       </div>

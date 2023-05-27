@@ -8,7 +8,8 @@
     object-fit: cover;
 }
 .box {
-    width: 90%;
+    width: 100%;
+    text-align: center;
 }
 
 .column {
@@ -17,18 +18,14 @@
 }
 
 .line {
-    background-color: rgb(62, 56, 56);
-    width: 100%;
-    height: 23%;
-    border-bottom: 3px solid rgb(90, 25, 25);
-    padding-left: 3%;
-    color: white;
-    opacity: 0.7;
+    border-top: 40px solid red;
+    padding-top: 20px;
 }
+
 .logo {
-    width: 10%;
+    width: 20%;
     font-size: 80%;
-    height: 100%;
+    height: auto;
 }
 
 .column {
@@ -36,7 +33,22 @@
     height: 100%;
 }
 
-.font {
-  font-size: 5em;
+.logo_img {
+    width: 140px;
+    margin: 12px 30%;
+}
+
+.box h2 {
+    color: white;
+    border-top: 40px solid red;
+    padding-top: 50px;
+}
+.box p {
+    color: black;
+    margin: 40px 25%;
+    /* border-bottom: 2px solid red; */
+}
+.box p:last-of-type {
+    margin-bottom: 10px;
 }
 
