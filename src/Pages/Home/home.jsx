@@ -49,7 +49,7 @@ const Home = () => {
       >
         <img className={H.logo_img} src={Logo} alt="" />
         <h2 className={`font_medium ${H.title}`}>ДОБРО ПОЖАЛОВАТЬ!</h2>
-        {/* <Nav /> */}
+        <Nav />
       </div>
     </div>
   );

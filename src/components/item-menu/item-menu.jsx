@@ -19,7 +19,6 @@ export const ItemMenu = (props) => {
 
   return (
     <>
-    <Nav />
       <div className="item-container">
         {props.items.map((item) => (
           <div className="item-card" key={item.id}>
