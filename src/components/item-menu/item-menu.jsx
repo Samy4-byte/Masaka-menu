@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Nav from "../nav/index"
 export const ItemMenu = (props) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -19,6 +19,7 @@ export const ItemMenu = (props) => {
 
   return (
     <>
+    <Nav />
       <div className="item-container">
         {props.items.map((item) => (
           <div className="item-card" key={item.id}>

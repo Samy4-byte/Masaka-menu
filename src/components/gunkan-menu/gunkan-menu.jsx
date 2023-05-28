@@ -63,8 +63,8 @@ const GunkanMenu = () => {
     ];
 
   return (
-    <div className="item-menu">
-      <h1>ГУНКАНЫ И СУСИ</h1>
+      <div className="item-menu">
+        <h1 className="font_small">ГУНКАНЫ И СУСИ</h1>
       <ItemMenu items={gunkans} />
     </div>
   );
