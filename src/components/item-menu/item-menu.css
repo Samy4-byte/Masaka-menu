@@ -117,8 +117,8 @@
     position: absolute;
     color: #aaa;
     top: 0;
-    right: 0px;
-    font-size: 58px;
+    right: 10px;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
