@@ -33,7 +33,7 @@ const DesertMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>ДЕСЕРТЫ</h1>
+      <h1 className='font'>ДЕСЕРТЫ</h1>
       <ItemMenu items={deserts} />
     </div>
   );

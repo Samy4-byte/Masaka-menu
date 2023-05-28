@@ -198,7 +198,7 @@ const ChickenMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БЛЮДА С КУРИЦЕЙ</h1>
+      <h1 className='font'>БЛЮДА С КУРИЦЕЙ</h1>
       <ItemMenu items={chickens} />
     </div>
   );

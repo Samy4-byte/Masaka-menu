@@ -64,7 +64,7 @@ const BowlMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БОУЛЫ</h1>
+      <h1 className='font'>БОУЛЫ</h1>
       <ItemMenu items={bowls} />
     </div>
   );

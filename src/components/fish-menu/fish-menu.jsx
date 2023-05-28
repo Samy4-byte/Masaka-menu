@@ -62,7 +62,7 @@ const Fishmenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БЛЮДА ИЗ РЫБЫ</h1>
+      <h1 className='font'>БЛЮДА ИЗ РЫБЫ</h1>
       <ItemMenu items={fishs} />
     </div>
   );

@@ -25,20 +25,20 @@ export const ItemMenu = (props) => {
             <button className="item-button" onClick={() => openModal(item)}>
               <img className="item-photo" src={item.photo} alt={item.name} />
             </button>
-            <h2 className="font_small">{item.name}</h2>
+            <h2 className="font_medium">{item.name}</h2>
             {item.ingredients && (
-              <p className="font_smaller">{item.ingredients.join(", ")}</p>
+              <p className="font-medium">{item.ingredients.join(", ")}</p>
               )}
             {item.description && (
-              <p className="font_smaller">{item.description}</p>
+              <p className="font_medium">{item.description}</p>
               )}
             <p className="font_green">Цена: {item.price} сом</p>
            {item.weight && (
              <p className="font_smaller">{item.weight} гр</p>
              )}
-             <h2 className="font_small">{item.name2}</h2>
+             <h2 className="font-medium">{item.name2}</h2>
              {item.ingredients2 && (
-               <p className="font_smaller">{item.ingredients2.join(", ")}</p>
+               <p className="font_medium">{item.ingredients2.join(", ")}</p>
              )}
              {item.price2 && (
                <p className="font_green">Цена: {item.price2} сом</p>

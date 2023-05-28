@@ -81,7 +81,7 @@ const BakedRollsMenu = () => {
 
     return (
         <div className="item-menu">
-            <h1>ЗАПЕЧЕННЫЕ РОЛЛЫ</h1>
+            <h1 className='font'>ЗАПЕЧЕННЫЕ РОЛЛЫ</h1>
             <ItemMenu items={bakedRolls} />
         </div>
     );

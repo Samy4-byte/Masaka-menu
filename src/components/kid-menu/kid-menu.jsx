@@ -29,7 +29,7 @@ const KidMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>ДЕТСКОЕ МЕНЮ</h1>
+      <h1 className='font'>ДЕТСКОЕ МЕНЮ</h1>
       <ItemMenu items={kids} />
     </div>
   );
