@@ -71,7 +71,7 @@ const BeefMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БЛЮДА С ГОВЯДИНОЙ</h1>
+      <h1 className='font'>БЛЮДА С ГОВЯДИНОЙ</h1>
       <ItemMenu items={beefs} />
     </div>
   );

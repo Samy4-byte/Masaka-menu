@@ -94,7 +94,7 @@ const BuisnessLunchMenu = () => {
 
     return (
         <div className="item-menu">
-            <h1>БИЗНЕС ЛАНЧИ</h1>
+            <h1 className='font'>БИЗНЕС ЛАНЧИ</h1>
             <ItemMenu items={lunches} />
         </div>
     );

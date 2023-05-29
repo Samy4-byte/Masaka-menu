@@ -2,21 +2,17 @@
     text-align: center;
     background-image: url(../images/JPG//light\ oak\ 2.jpeg);
     border-top: 20px solid black;
+    z-index: 90;
 }
 
-.item-menu h1 {
-    margin-top: 60px;
-}
-
-.item-menu h1 {
-    margin-top: 30px;
-}
 .item-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.item-menu h1 {
+    margin-top: 30px;
+}
 .item-card {
     width: 300px;
     margin: 20px;
@@ -25,7 +21,17 @@
     border-radius: 10px;
     text-align: center;
     background-color: rgb(21, 23, 21);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 0, 0, 0.3), 0 0 12px rgba(0, 255, 0, 0.3), 0 0 16px rgba(0, 0, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.1),
+                0 0 8px rgba(255, 0, 0, 0.3),
+                0 0 12px rgba(0, 255, 0, 0.3),
+                0 0 16px rgba(0, 0, 255, 0.3);
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+
+.item-card:hover {
+    transform: rotateY(10deg) translateY(-5px);
 }
 
 .item-photo {
@@ -35,22 +41,27 @@
     margin-bottom: 20px;
     object-fit: cover;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.item-card:hover .item-photo {
+    transform: scale(1.05);
 }
 
 .item-card h2 {
     text-transform: uppercase;
     color: white;
     font-size: 20px;
+    margin-bottom: 20px;
+    transform: translateZ(40px);
 }
 
 .item-card p {
-    margin: 10px 0;
     color: white;
-    /* text-transform: capitalize; */
+    line-height: 30px;
 }
 
-.item-card .price {
-    font-weight: bold;
+.item-card .font_green {
     color: green;
 }
 
@@ -58,12 +69,11 @@
     background-color: rgb(21, 23, 21);
     border: none;
 }
+
 .item-weight {
     color: #ffff;
 }
 
-
-/* modal css */
 .modal {
     display: flex;
     justify-content: center;
@@ -80,27 +90,33 @@
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: rgb(151, 126, 81);
+    color: black;
     padding: 20px;
     border: 2px solid #888;
-    width: 80%;
-    max-width: 700px;
-    max-height: 600px;
+    width: 40%;
+    height: auto;
     overflow-y: auto;
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    perspective: 1000px;
+    transition: transform 1s;
+}
+
+.modal-content:hover {
+    transform: rotateY(5deg) translateY(-5px);
 }
 
 .modal-content h2 {
     text-transform: uppercase;
+    transform: translateZ(40px);
+    margin: 20px 0;
 }
-
 
 .close-button {
     position: absolute;
     color: #aaa;
-    position: absolute;
-    top: 10px;
+    top: 0;
     right: 10px;
     font-size: 28px;
     font-weight: bold;
@@ -114,6 +130,14 @@
     cursor: pointer;
 }
 
+.modal .font_green {
+    color: green;
+}
+
+.modal p {
+    line-height: 30px;
+}
+
 .modal img {
     width: 100%;
     max-height: 400px;
@@ -121,7 +145,6 @@
     object-fit: contain;
     border-radius: 15px;
     padding: 10px;
-    margin-bottom: 10px;
     color: #eee;
-
+    transition: transform 0.5s;
 }
