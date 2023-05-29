@@ -28,27 +28,27 @@ export const ItemMenu = (props) => {
             <h2 className="font_medium">{item.name}</h2>
             {item.ingredients && (
               <p className="font-medium">{item.ingredients.join(", ")}</p>
-              )}
+            )}
             {item.description && (
               <p className="font_medium">{item.description}</p>
-              )}
+            )}
             <p className="font_green">Цена: {item.price} сом</p>
-           {item.weight && (
-             <p className="font_smaller">{item.weight} гр</p>
-             )}
-             <h2 className="font-medium">{item.name2}</h2>
-             {item.ingredients2 && (
-               <p className="font_medium">{item.ingredients2.join(", ")}</p>
-             )}
-             {item.price2 && (
-               <p className="font_green">Цена: {item.price2} сом</p>
-             )}
-             {item.weight2 && (
-               <p className="font_smaller">{item.weight2} гр</p>
-             )}
-           {item.count && (
-             <p className="font_smaller">{item.count} шт</p>//
-           )}
+            {item.weight && (
+              <p className="font_smaller">{item.weight} гр</p>
+            )}
+            <h2 className="font-medium">{item.name2}</h2>
+            {item.ingredients2 && (
+              <p className="font_medium">{item.ingredients2.join(", ")}</p>
+            )}
+            {item.price2 && (
+              <p className="font_green">Цена: {item.price2} сом</p>
+            )}
+            {item.weight2 && (
+              <p className="font_smaller">{item.weight2} гр</p>
+            )}
+            {item.count && (
+              <p className="font_smaller">{item.count} шт</p>//
+            )}
           </div>
         ))}
       </div>
@@ -87,6 +87,20 @@ export const ItemMenu = (props) => {
             {selectedItem.weight2 && (
               <p className="font_smaller">Вес: {selectedItem.weight2} гр</p>
             )}
+            {selectedItem.ingr && selectedItem.ingr.length > 0 ? (
+              <table>
+                <tbody>
+                  {selectedItem.ingr.map((ingrItem, index) => (
+                    <tr key={index}>
+                      <td>{ingrItem.name}</td>
+                      {ingrItem.weight && <td>{ingrItem.weight}гр</td>}
+                      {ingrItem.count && <td>{ingrItem.count} шт</td>}
+                      <td>{ingrItem.price}с</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : null}
           </div>
         </div>
       )}

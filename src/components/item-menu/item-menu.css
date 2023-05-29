@@ -10,9 +10,11 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .item-menu h1 {
     margin-top: 30px;
 }
+
 .item-card {
     width: 300px;
     margin: 20px;
@@ -22,10 +24,10 @@
     text-align: center;
     background-color: rgb(21, 23, 21);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-                0 1px 3px rgba(0, 0, 0, 0.1),
-                0 0 8px rgba(255, 0, 0, 0.3),
-                0 0 12px rgba(0, 255, 0, 0.3),
-                0 0 16px rgba(0, 0, 255, 0.3);
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 0 8px rgba(255, 0, 0, 0.3),
+        0 0 12px rgba(0, 255, 0, 0.3),
+        0 0 16px rgba(0, 0, 255, 0.3);
     perspective: 1000px;
     transition: transform 0.5s;
 }
@@ -74,6 +76,7 @@
     color: #ffff;
 }
 
+
 .modal {
     display: flex;
     justify-content: center;
@@ -95,6 +98,9 @@
     padding: 20px;
     border: 2px solid #888;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     overflow-y: auto;
     border-radius: 14px;
@@ -110,7 +116,7 @@
 .modal-content h2 {
     text-transform: uppercase;
     transform: translateZ(40px);
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .close-button {
@@ -145,4 +151,31 @@
     border-radius: 15px;
     color: #eee;
     transition: transform 0.5s;
+}
+
+tr > td {
+    width: calc(100% /3);
+}
+
+
+@media screen and (max-height: 550px) {
+    .modal-content {
+        position: relative;
+        /* padding: 20px; */
+        width: 70%;
+        /* height: 450px; */
+    }
+
+    .modal-content h2 {
+        font-size: 15px;
+    }
+
+    .modal img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+
 }
