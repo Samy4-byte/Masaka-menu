@@ -29,6 +29,7 @@ export const App = () => {
       <Nav />
       <Routes>
         <Route path='/' element={<Layout />} >
+          <Route path='/' element={<BuisneslunchPage />} />
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
           <Route path='/bowls' element={<BowlPage />} />
           <Route path='/tofu' element={<TofuPage />} />
