@@ -248,9 +248,9 @@ return (
                 {drink.ingr.map((ingrItem, index) => (
                   <tr key={index}>
                     <td className={style.name}>{ingrItem.name}</td>
-                    {ingrItem.size && <td>{ingrItem.size}</td>}
+                    {ingrItem.size && <td>{ingrItem.size}л</td>}
                     {!ingrItem.size && <td></td>}
-                    <td>{ingrItem.price}</td>
+                    <td>{ingrItem.price}с</td>
                   </tr>
                 ))}
               </tbody>
