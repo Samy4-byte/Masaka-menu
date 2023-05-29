@@ -97,7 +97,7 @@
     color: black;
     padding: 20px;
     border: 2px solid #888;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +160,6 @@ tr > td {
 
 @media screen and (max-height: 550px) {
     .modal-content {
-        position: relative;
         /* padding: 20px; */
         width: 70%;
         /* height: 450px; */
