@@ -50,7 +50,7 @@ const SetMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>СЕТЫ</h1>
+      <h1 className='font'>СЕТЫ</h1>
       <ItemMenu items={sets} />
     </div>
   );

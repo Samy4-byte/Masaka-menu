@@ -621,7 +621,7 @@ const RollMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>РОЛЛЫ</h1>
+      <h1 className='font'>РОЛЛЫ</h1>
       <ItemMenu items={rolls} />
     </div>
   );

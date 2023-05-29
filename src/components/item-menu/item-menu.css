@@ -94,7 +94,7 @@
     color: black;
     padding: 20px;
     border: 2px solid #888;
-    width: 40%;
+    width: 70%;
     height: auto;
     overflow-y: auto;
     border-radius: 14px;
@@ -117,7 +117,7 @@
     position: absolute;
     color: #aaa;
     top: 0;
-    right: 10px;
+    right: 5px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -141,10 +141,8 @@
 .modal img {
     width: 100%;
     max-height: 400px;
-    object-fit: cover;
     object-fit: contain;
     border-radius: 15px;
-    padding: 10px;
     color: #eee;
     transition: transform 0.5s;
 }

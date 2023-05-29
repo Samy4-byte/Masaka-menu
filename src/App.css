@@ -9,27 +9,55 @@
     src: url(./components//styles//fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
 
-.font {
-    font-size: 6vw;
-    font-family: 'Comfortaa';
+@media screen and (max-width: 650px) {
+    .font {
+        font-size: 6vw;
+        font-family: 'Comfortaa';
+    }
+    .font_medium {
+        font-size: 3vw;
+        font-family: 'Comfortaa';
+    }
+    .font_small {
+        font-size: 2vw;
+        font-family: 'Comfortaa';
+    }
+    .font_smaller {
+        font-size: 2.5vw;
+        font-family: 'Comfortaa';
+    }
+    .font_green {
+        font-size: 2.5vw;
+        font-family: 'Comfortaa';
+    }
+    .link {
+        font-size: 1vw;
+        font-family: 'Comfortaa';
+    } 
 }
-.font_medium {
-    font-size: 3vw;
-    font-family: 'Comfortaa';
-}
-.font_small {
-    font-size: 2vw;
-    font-family: 'Comfortaa';
-}
-.font_smaller {
-    font-size: 2.5vw;
-    font-family: 'Comfortaa';
-}
-.font_green {
-    font-size: 2.5vw;
-    font-family: 'Comfortaa';
-}
-.link {
-    font-size: 1vw;
-    font-family: 'Comfortaa';
-}
+/* @media screen and (max-width: 1200px) {
+    .font {
+        font-size: 6vw;
+        font-family: 'Comfortaa';
+    }
+    .font_medium {
+        font-size: 3vw;
+        font-family: 'Comfortaa';
+    }
+    .font_small {
+        font-size: 2vw;
+        font-family: 'Comfortaa';
+    }
+    .font_smaller {
+        font-size: 2.5vw;
+        font-family: 'Comfortaa';
+    }
+    .font_green {
+        font-size: 2.5vw;
+        font-family: 'Comfortaa';
+    }
+    .link {
+        font-size: 1vw;
+        font-family: 'Comfortaa';
+    }
+} */

@@ -189,7 +189,7 @@ const SaladMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>САЛАТЫ</h1>
+      <h1 className='font'>САЛАТЫ</h1>
       <ItemMenu items={salads} />
     </div>
   );

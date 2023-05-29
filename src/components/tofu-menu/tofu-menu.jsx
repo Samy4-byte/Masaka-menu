@@ -54,7 +54,7 @@ const TofuMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БЛЮДА ИЗ ТОФУ</h1>
+      <h1 className='font'>БЛЮДА ИЗ ТОФУ</h1>
       <ItemMenu items={tofus} />
     </div>
   );

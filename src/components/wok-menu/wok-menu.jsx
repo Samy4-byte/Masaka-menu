@@ -61,7 +61,7 @@ const WokMenu = () => {
 
     return (
  <div className="item-menu">
-      <h1>ВОКИ</h1>
+      <h1 className='font'>ВОКИ</h1>
       <ItemMenu items={woks} />
     </div>
     );

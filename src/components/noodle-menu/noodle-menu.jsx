@@ -53,7 +53,7 @@ const NoodleMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>БЛЮДА С ЛАПШОЙ</h1>
+      <h1 className='font'>БЛЮДА С ЛАПШОЙ</h1>
       <ItemMenu items={noodles} />
     </div>
   );

@@ -130,7 +130,7 @@ const TempuraRollMenu = () => {
 
     return (
         <div className="item-menu">
-            <h1>ТЕМПУРА РОЛЛЫ</h1>
+            <h1 className='font'>ТЕМПУРА РОЛЛЫ</h1>
             <ItemMenu items={tempuras} />
         </div>
     );

@@ -89,7 +89,7 @@ const SnackMenu = () => {
 
   return (
     <div className="item-menu">
-      <h1>ЗАКУСКИ</h1>
+      <h1 className='font'>ЗАКУСКИ</h1>
       <ItemMenu items={snacks} />
     </div>
   );

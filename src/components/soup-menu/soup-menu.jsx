@@ -126,7 +126,7 @@ const SoupMenu = () => {
 
     return (
         <div className="item-menu">
-            <h1>СУПЫ</h1>
+            <h1 className='font'>СУПЫ</h1>
             <ItemMenu items={soups} />
         </div>
     );
