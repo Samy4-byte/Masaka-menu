@@ -53,11 +53,30 @@ const SoupMenu = () => {
             name: "рамен",
             photo: `${Soup5}`,
 
-            ingredients: [
-                "курица",
-                "говядина",
-                "сыр",
-                "яйцо куриное"
+            ingr: [
+                {
+                    name: "курица",
+                    weight: 50,
+                    price: 60,
+                },
+                {
+                    name: "говядина",
+                    weight: 50,
+                    price: 90
+                },
+                {
+                    name: "сыр",
+                    weight: 50,
+                    price: 90
+                },
+                {
+                    name: "яйцо куриное",
+                    count: 1,
+                    price: 30
+                }
+
+
+
             ],
             price: 185,
             weight: 370
