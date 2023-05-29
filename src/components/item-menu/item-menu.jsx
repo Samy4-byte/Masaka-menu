@@ -21,26 +21,26 @@ export const ItemMenu = (props) => {
     <>
       <div className="item-container">
         {props.items.map((item) => (
-          <div className="item-card" key={item.id}>
-            <button className="item-button" onClick={() => openModal(item)}>
+          <div className="item-card" onClick={() => openModal(item)} key={item.id}>
+           
               <img className="item-photo" src={item.photo} alt={item.name} />
-            </button>
+            <div className="box">
+            <div className="name_box">
             <h2 className="font_medium">{item.name}</h2>
-            {item.ingredients && (
-              <p className="font-medium">{item.ingredients.join(", ")}</p>
-              )}
-            {item.description && (
-              <p className="font_medium">{item.description}</p>
-              )}
+            </div>
+              <div className="price_box">
             <p className="font_green">Цена: {item.price} сом</p>
            {item.weight && (
              <p className="font_smaller">{item.weight} гр</p>
              )}
+             </div>
+             </div>
+             <div className="box">
+              <div className="name_box">
              <h2 className="font-medium">{item.name2}</h2>
-             {item.ingredients2 && (
-               <p className="font_medium">{item.ingredients2.join(", ")}</p>
-             )}
-             {item.price2 && (
+              </div>
+              <div className="price_box">
+              {item.price2 && (
                <p className="font_green">Цена: {item.price2} сом</p>
              )}
              {item.weight2 && (
@@ -49,6 +49,8 @@ export const ItemMenu = (props) => {
            {item.count && (
              <p className="font_smaller">{item.count} шт</p>//
            )}
+              </div>
+             </div>
           </div>
         ))}
       </div>
