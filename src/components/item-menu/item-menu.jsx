@@ -27,7 +27,6 @@ export const ItemMenu = (props) => {
             <div className="box">
             <div className="name_box">
             <h2 className="font_medium">{item.name}</h2>
-<<<<<<< HEAD
             </div>
               <div className="price_box">
             <p className="font_green">Цена: {item.price} сом</p>
@@ -52,31 +51,6 @@ export const ItemMenu = (props) => {
            )}
               </div>
              </div>
-=======
-            {item.ingredients && (
-              <p className="font-medium">{item.ingredients.join(", ")}</p>
-            )}
-            {item.description && (
-              <p className="font_medium">{item.description}</p>
-            )}
-            <p className="font_green">Цена: {item.price} сом</p>
-            {item.weight && (
-              <p className="font_smaller">{item.weight} гр</p>
-            )}
-            <h2 className="font-medium">{item.name2}</h2>
-            {item.ingredients2 && (
-              <p className="font_medium">{item.ingredients2.join(", ")}</p>
-            )}
-            {item.price2 && (
-              <p className="font_green">Цена: {item.price2} сом</p>
-            )}
-            {item.weight2 && (
-              <p className="font_smaller">{item.weight2} гр</p>
-            )}
-            {item.count && (
-              <p className="font_smaller">{item.count} шт</p>//
-            )}
->>>>>>> samat
           </div>
         ))}
       </div>
