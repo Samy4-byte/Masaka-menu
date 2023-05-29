@@ -28,7 +28,7 @@ export const App = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path='/' element={<BuisneslunchPage />} >
+        <Route path='/' element={<Layout />} >
           <Route path='/buisness-lunch' element={<BuisneslunchPage />} />
           <Route path='/bowls' element={<BowlPage />} />
           <Route path='/tofu' element={<TofuPage />} />
