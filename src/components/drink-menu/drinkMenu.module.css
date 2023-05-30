@@ -1,6 +1,6 @@
 .itemMenu {
     text-align: center;
-    background-image: url(../images/JPG//light\ oak\ 2.jpeg);
+    background-image: url(../images/JPG/bamboo.jpg);
     border-top: 20px solid black;
 }
 
@@ -40,8 +40,6 @@
     text-transform: uppercase;    
 }
 
-
-.item-card .price {
-    font-weight: bold;
-    color: green;
+.tab {
+    margin-bottom: 10px;
 }

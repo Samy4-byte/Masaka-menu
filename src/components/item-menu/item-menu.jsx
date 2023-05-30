@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Nav from "../nav/index"
 export const ItemMenu = (props) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -21,34 +20,36 @@ export const ItemMenu = (props) => {
     <>
       <div className="item-container">
         {props.items.map((item) => (
-          <div className="item-card" key={item.id}>
-            <button className="item-button" onClick={() => openModal(item)}>
+          <div className="item-card" onClick={() => openModal(item)} key={item.id}>
+           
               <img className="item-photo" src={item.photo} alt={item.name} />
-            </button>
+            <div className="box">
+            <div className="name_box">
             <h2 className="font_medium">{item.name}</h2>
-            {item.ingredients && (
-              <p className="font-medium">{item.ingredients.join(", ")}</p>
-            )}
-            {item.description && (
-              <p className="font_medium">{item.description}</p>
-            )}
+            </div>
+              <div className="price_box">
             <p className="font_green">Цена: {item.price} сом</p>
-            {item.weight && (
-              <p className="font_smaller">{item.weight} гр</p>
-            )}
-            <h2 className="font-medium">{item.name2}</h2>
-            {item.ingredients2 && (
-              <p className="font_medium">{item.ingredients2.join(", ")}</p>
-            )}
-            {item.price2 && (
-              <p className="font_green">Цена: {item.price2} сом</p>
-            )}
-            {item.weight2 && (
-              <p className="font_smaller">{item.weight2} гр</p>
-            )}
-            {item.count && (
-              <p className="font_smaller">{item.count} шт</p>//
-            )}
+           {item.weight && (
+             <p className="font_smaller">{item.weight} гр</p>
+             )}
+             </div>
+             </div>
+             <div className="box">
+              <div className="name_box">
+             <h2 className="font-medium">{item.name2}</h2>
+              </div>
+              <div className="price_box">
+              {item.price2 && (
+               <p className="font_green">Цена: {item.price2} сом</p>
+             )}
+             {item.weight2 && (
+               <p className="font_smaller">{item.weight2} гр</p>
+             )}
+           {item.count && (
+             <p className="font_smaller">{item.count} шт</p>//
+           )}
+              </div>
+             </div>
           </div>
         ))}
       </div>
@@ -92,10 +93,10 @@ export const ItemMenu = (props) => {
                 <tbody>
                   {selectedItem.ingr.map((ingrItem, index) => (
                     <tr key={index}>
-                      <td>{ingrItem.name}</td>
-                      {ingrItem.weight && <td>{ingrItem.weight}гр</td>}
-                      {ingrItem.count && <td>{ingrItem.count} шт</td>}
-                      <td>{ingrItem.price}с</td>
+                      <td className="tab-item">{ingrItem.name}</td>
+                      {ingrItem.weight && <td className="tab-item">{ingrItem.weight}гр</td>}
+                      {ingrItem.count && <td className="tab-item">{ingrItem.count} шт</td>}
+                      <td className="tab-item">{ingrItem.price}с</td>
                     </tr>
                   ))}
                 </tbody>

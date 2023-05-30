@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     height: auto;
-    background-image: url(../../components/images//JPG/light\ oak\ 2.jpeg);
+    background-image: url(../../components/images/JPG/bamboo-texture.jpg);
+    background-size: cover;
     background-position: center;
     object-fit: cover;
 }

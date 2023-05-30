@@ -1,6 +1,8 @@
 .item-menu {
     text-align: center;
-    background-image: url(../images/JPG//light\ oak\ 2.jpeg);
+    background-image: url(../images/JPG/bamboo.jpg);
+    object-fit: cover;
+    background-position: center;
     border-top: 20px solid black;
     z-index: 90;
 }
@@ -16,13 +18,14 @@
 }
 
 .item-card {
-    width: 300px;
+    width: 400px;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
-    background-color: rgb(21, 23, 21);
+    /* background-color: rgb(77, 92, 77); */
+    background-color: #800000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.1),
         0 0 8px rgba(255, 0, 0, 0.3),
@@ -34,6 +37,25 @@
 
 .item-card:hover {
     transform: rotateY(10deg) translateY(-5px);
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.name_box {
+
+    width: 40%;
+}
+.box .price_box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
 }
 
 .item-photo {
@@ -64,12 +86,7 @@
 }
 
 .item-card .font_green {
-    color: green;
-}
-
-.item-button {
-    background-color: rgb(21, 23, 21);
-    border: none;
+    color: #9ACD32;
 }
 
 .item-weight {
@@ -93,8 +110,9 @@
 
 .modal-content {
     position: relative;
-    background-color: rgb(151, 126, 81);
-    color: black;
+    /* background-color: #800000; */
+    background-color: rgb(77, 92, 77);
+    color: white;
     padding: 20px;
     border: 2px solid #888;
     width: 50%;
@@ -131,13 +149,13 @@
 
 .close-button:hover,
 .close-button:focus {
-    color: black;
+    color: #9ACD32;
     text-decoration: none;
     cursor: pointer;
 }
 
 .modal .font_green {
-    color: green;
+    color: #9ACD32;
 }
 
 .modal p {
@@ -153,7 +171,7 @@
     transition: transform 0.5s;
 }
 
-tr > td {
+.tab-item {
     width: calc(100% /3);
 }
 
