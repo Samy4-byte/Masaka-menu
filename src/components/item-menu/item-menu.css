@@ -120,7 +120,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    overflow-y:scroll;
+    overflow-y: auto;
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     perspective: 1000px;
@@ -134,7 +134,7 @@
 .modal-content h2 {
     text-transform: uppercase;
     transform: translateZ(40px);
-    margin: 20px 0 10px 0;
+    margin: 15px 0 5px 0;
 }
 
 .close-button {
@@ -166,7 +166,7 @@
 }
 
 
-@media screen and (max-height: 550px) and (max-width: 850px) {
+@media screen  and (max-width: 900px) {
     .modal-content {
         width: 70%;
         justify-content: space-evenly;
@@ -185,10 +185,26 @@
 
 }
 
+@media screen  and (max-width: 550px) {
+    .modal-content {
+        width: 80%;
+
+    }
+
+    .modal-content h2 {
+        font-size: 15px;
+    }
+
+    .modal img {
+        max-height: 140px;
+        object-fit: cover;
+    }
+
+}
+
 @media screen and (max-width: 300px) {
     .modal-content {
         width: 80%;
-        justify-content: space-evenly;
     }
 
     .modal-content h2 {
