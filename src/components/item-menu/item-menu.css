@@ -120,7 +120,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    overflow-y: auto;
+    overflow-y:scroll;
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     perspective: 1000px;
@@ -152,13 +152,9 @@
     color: #9ACD32;
 }
 
-.modal p {
-    line-height: 30px;
-}
-
 .modal img {
     width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 15px;
     color: #eee;
@@ -184,6 +180,23 @@
 
     .modal img {
         max-height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .modal-content {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .modal-content h2 {
+        font-size: 12px;
+    }
+
+    .modal img {
+        max-height: 100px;
         object-fit: cover;
     }
 
