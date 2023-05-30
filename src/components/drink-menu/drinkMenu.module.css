@@ -40,8 +40,6 @@
     text-transform: uppercase;    
 }
 
-
-.item-card .price {
-    font-weight: bold;
-    color: green;
+.tab {
+    margin-bottom: 10px;
 }

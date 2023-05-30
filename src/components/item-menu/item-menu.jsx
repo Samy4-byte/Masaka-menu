@@ -93,10 +93,10 @@ export const ItemMenu = (props) => {
                 <tbody>
                   {selectedItem.ingr.map((ingrItem, index) => (
                     <tr key={index}>
-                      <td>{ingrItem.name}</td>
-                      {ingrItem.weight && <td>{ingrItem.weight}гр</td>}
-                      {ingrItem.count && <td>{ingrItem.count} шт</td>}
-                      <td>{ingrItem.price}с</td>
+                      <td className="tab-item">{ingrItem.name}</td>
+                      {ingrItem.weight && <td className="tab-item">{ingrItem.weight}гр</td>}
+                      {ingrItem.count && <td className="tab-item">{ingrItem.count} шт</td>}
+                      <td className="tab-item">{ingrItem.price}с</td>
                     </tr>
                   ))}
                 </tbody>

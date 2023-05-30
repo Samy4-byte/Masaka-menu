@@ -171,7 +171,7 @@
     transition: transform 0.5s;
 }
 
-tr > td {
+.tab-item {
     width: calc(100% /3);
 }
 
