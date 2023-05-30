@@ -158,7 +158,7 @@ tr > td {
 }
 
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 550px) and (max-width: 450px) {
     .modal-content {
         /* padding: 20px; */
         width: 70%;
