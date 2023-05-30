@@ -101,34 +101,46 @@ const links = [
 ]
 
 const Nav = () => {
-  const [isNavFixed, setIsNavFixed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const navElement = document.getElementById("nav");
-      const navHeight = navElement.offsetHeight;
-      const scrollPosition = window.scrollY;
-
-      setIsNavFixed(scrollPosition > navHeight);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <div id="nav" className={`slider-container ${isNavFixed ? "fixed" : ""}`}>
-      <div className="link-wrapper">
-        {links.map(({ id, text, route }) => (
-          <Link className="link" key={id} to={route}>
-            {text}
-          </Link>
-        ))}
+    const [isNavFixed, setIsNavFixed] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const navElement = document.getElementById("nav");
+        const navHeight = navElement.offsetHeight;
+        const scrollPosition = window.scrollY;
+  
+        setIsNavFixed(scrollPosition > navHeight);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
+    return (
+      <div
+        id="nav"
+        className={`slider-container ${isNavFixed ? "fixed" : ""}`}
+        style={{
+          transition: "top 0.3s ease-in-out", // Added CSS transition
+        }}
+      >
+        <div className="link-wrapper">
+          {links.map(({ id, text, route }) => (
+            <Link className="link" key={id} to={route}>
+              {text}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
-
-export default Nav;
+    );
+  };
+  
+  export default Nav;
+  
+  
+  
+  
+  
+  
