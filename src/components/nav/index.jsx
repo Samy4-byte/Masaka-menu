@@ -123,7 +123,7 @@ const Nav = () => {
         id="nav"
         className={`slider-container ${isNavFixed ? "fixed" : ""}`}
         style={{
-          transition: "top 0.3s ease-in-out", // Added CSS transition
+          transition: "top 0.3s ease-in-out", 
         }}
       >
         <div className="link-wrapper">
@@ -138,9 +138,5 @@ const Nav = () => {
   };
   
   export default Nav;
-  
-  
-  
-  
   
   

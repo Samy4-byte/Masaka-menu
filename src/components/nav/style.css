@@ -1,9 +1,9 @@
-/* .slider-container {
+.slider-container {
     width: 100%;
     overflow: hidden;
     z-index: 100;
     transition: 3s;
-  } */
+  }
   
   .slider-container.fixed {
     position: fixed;
@@ -40,14 +40,9 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .link.active {
-    opacity: 1;
-  }
-  
   .link:hover {
     transform: scale(1.1);
     background-color: black;
     color: #fffff0;
-    opacity: 1;
   }
-
+  
