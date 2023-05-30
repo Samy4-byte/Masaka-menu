@@ -3,14 +3,15 @@
         overflow: hidden;
         z-index: 100;
     }
+
     .slider-container.fixed {
         position: fixed;
         top: 0;
-        padding: 10px 0;
+        padding: 10px 0 0;
         background-color: #800000;
     }
+
     .link-wrapper {
-        display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
@@ -24,23 +25,19 @@
     .link {
         display: inline-block;
         padding: 10px;
-        margin: 5px;
+        margin: 0 5px;
         background-color: #FFFFF0	;
         color: black;
         text-decoration: none;
         letter-spacing: 1px;
-        border-radius: 5px;
+        border-radius: 6px;
         opacity: 0.9;
         transition: 0.5s;
     }
 
-    .link.active {
-        opacity: 1;
-    }
 
     .link:hover {
         transform: scale(1.1);
         background-color: black;
         color: #FFFFF0;
-        opacity: 1;
     }
