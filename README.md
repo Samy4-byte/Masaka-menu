@@ -1,11 +1,12 @@
+# MASAKA menu
 
-MASAKA menu
 Together with a team of 3 people, we created menu for restaraunt on the React. 
 
 ## Main features:
 
 <ol>
-   <li>Menu: display menu by click nav-menu, dispay modal window each item </li>
+   <li>Menu: display menu by click nav-menu </li>
+   <li>Item: dispay modal window by click each item  </li>
    
  </ol>
 
